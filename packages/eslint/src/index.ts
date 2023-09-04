@@ -1,1 +1,1 @@
-export * from './lib/eslint';
+export {createEslintConfig as grnx} from './config'

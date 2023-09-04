@@ -7,7 +7,7 @@ import {invariant} from './../helpers'
 
 const [, , name, tag = 'next'] = process.argv;
 
-const bootstrap = (name: string, tag: string) => {
+const publishLibrary = (name: string, tag: string) => {
   const graph = readCachedProjectGraph();
   const project = graph.nodes[name];
   const root = resolveRoot()
@@ -30,4 +30,4 @@ const bootstrap = (name: string, tag: string) => {
   execSync(`npm publish --access public --tag ${tag}`);
 }
 
-bootstrap(name, tag)
+publishLibrary(name, tag)
