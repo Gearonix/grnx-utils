@@ -1,0 +1,26 @@
+{
+  "name": "@grnx-utils/root",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "targets": {
+    "local-registry": {
+      "executor": "@nx/js:verdaccio",
+      "options": {
+        "port": 4873,
+        "config": ".verdaccio/config.yml",
+        "storage": "tmp/local-registry/storage"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx affected -t lint --parallel=6"
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx run-many -t publish --parallel=6"
+      }
+    }
+  }
+}

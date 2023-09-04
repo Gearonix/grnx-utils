@@ -1,0 +1,14 @@
+{
+  "name": "scripts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/scripts/src",
+  "tags": [],
+  "targets": {
+    "run": {
+      "command": "tsx -r tsconfig-paths/register src/{args.script} {args.argv}",
+      "options": {
+        "cwd": "tools/scripts"
+      }
+    }
+  }
+}

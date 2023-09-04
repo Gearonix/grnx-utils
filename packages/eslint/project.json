@@ -1,0 +1,45 @@
+{
+  "name": "eslint",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/eslint/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/eslint",
+        "main": "packages/eslint/src/index.ts",
+        "tsConfig": "packages/eslint/tsconfig.lib.json",
+        "assets": [],
+        "project": "packages/eslint/package.json",
+        "compiler": "swc",
+        "format": [
+          "cjs",
+          "esm"
+        ]
+      }
+    },
+    "publish": {
+      "command": "nx run scripts:run --script=publish.ts --argv=eslint",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/eslint/**/*.ts",
+          "packages/eslint/package.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
