@@ -1,7 +1,8 @@
 name: grnx-utils > Publish
 
 on:
-  push: [ changeset-test ]
+  push:
+    branches: [ changeset-test ]
 
 permissions:
   contents: write
@@ -10,7 +11,6 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
-    if: github.event.pull_request.merged == 'true'
     permissions: write-all
     name: Release
     runs-on: ubuntu-latest
@@ -23,6 +23,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         with:
