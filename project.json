@@ -1,5 +1,5 @@
 {
-  "name": "@grnx-utils/root",
+  "name": "root",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "targets": {
     "local-registry": {
@@ -26,6 +26,18 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "nx run-many -t publish --parallel=6"
+      }
+    },
+    "release-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "yarn changeset version && yarn install"
+      }
+    },
+    "release-publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "yarn nx affected:build && yarn changeset publish"
       }
     }
   }

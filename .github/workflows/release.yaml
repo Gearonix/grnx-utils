@@ -1,0 +1,36 @@
+name: grnx-utils > Release
+
+on:
+  push:
+    branches: [ changeset-test ]
+permissions:
+  contents: write
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: nrwl/nx-set-shas@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Create Release Pull Request
+        uses: changesets/action@v1
+        with:
+          publish: yarn nx release-publish root
+          version: yarn nx release-version root
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

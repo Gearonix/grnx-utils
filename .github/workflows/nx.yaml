@@ -1,0 +1,31 @@
+name: grnx-utils > Nx CI
+
+on:
+  push:
+    branches: [ changeset-test ]
+permissions:
+  contents: write
+
+jobs:
+  nx:
+    name: NX checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: nrwl/nx-set-shas@v3
+
+      - name: Installing Node.js 19.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 19.x
+          cache: 'yarn'
+
+      - name: Installing dependencies
+        run: yarn install --immutable
+
+      - name: Run NX checks
+        run: |
+          yarn nx lint root
