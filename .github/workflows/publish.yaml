@@ -1,7 +1,7 @@
 name: grnx-utils > Release
 
 on:
-  push:
+  pull_request:
     branches: [ changeset-test ]
 permissions:
   contents: write
@@ -51,18 +51,5 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Creating .npmrc
-        run: |
-          cat << EOF > "$HOME/.npmrc"
-          //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          EOF
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Create Release Pull Request
-        uses: changesets/action@v1
-        with:
-          version: yarn nx release-version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish packages to NPM
+        run: yarn nx publish
