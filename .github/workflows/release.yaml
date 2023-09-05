@@ -22,11 +22,6 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'release: update version'
-          branch: changeset-test
-
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         with:
@@ -74,3 +69,8 @@ jobs:
 
       - name: Publish packages to NPM
         run: yarn nx publish
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'release: update version'
+          branch: changeset-test
