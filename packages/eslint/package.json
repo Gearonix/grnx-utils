@@ -1,9 +1,15 @@
 {
   "name": "@grnx-utils/eslint",
+  "auhtor": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
   "type": "commonjs",
   "version": "1.0.9",
   "main": "./index.cjs",
   "module": "./index.js",
+  "types": "./index.cjs.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "eslint-kit": "10.0.0"
   },
