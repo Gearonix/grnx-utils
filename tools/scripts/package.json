@@ -1,3 +1,4 @@
 {
-  "name": "@grnx-utils/scripts"
+  "name": "@grnx-utils/scripts",
+  "private": true
 }

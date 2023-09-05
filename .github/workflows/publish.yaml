@@ -1,0 +1,72 @@
+name: grnx-utils > Publish
+
+on:
+  push:
+    branches: [ changeset-test ]
+  pull_request:
+    branches: [ changeset-test ]
+    types:
+      - closed
+  pull_request_review:
+    types: [ submitted ]
+
+permissions:
+  contents: write
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  publish:
+    if: github.event.pull_request.merged == true
+    permissions: write-all
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'changeset-test'
+
+      - run: |
+          echo "BASE: ${{ env.NX_BASE }}"
+          echo "HEAD: ${{ env.NX_HEAD }}"
+      - name: Set nx SHA
+        id: setSHAs
+        uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'changeset-test'
+
+
+      - run: |
+          echo "BASE: ${{ steps.setSHAs.outputs.base }}"
+          echo "HEAD: ${{ steps.setSHAs.outputs.head }}"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+          //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+
+      - name: Publish packages to NPM
+        run: yarn nx publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

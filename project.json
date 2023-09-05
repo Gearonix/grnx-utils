@@ -1,5 +1,5 @@
 {
-  "name": "@grnx-utils/root",
+  "name": "root",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "targets": {
     "local-registry": {
@@ -19,14 +19,21 @@
     "lint": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "nx affected -t lint --parallel=6"
+        "command": "nx affected --base=origin/changeset-test -t lint --parallel=6  --projects=tag:library:*"
       }
     },
     "publish": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "nx run-many -t publish --parallel=6"
+        "command": "nx run-many -t publish --parallel=6 --projects=tag:library:*"
+      }
+    },
+    "release-version": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "yarn changeset version && yarn install"
       }
     }
-  }
+  },
+  "tags": ["nx-root"]
 }
