@@ -65,3 +65,15 @@ jobs:
 
       - name: Publish packages to NPM
         run: yarn nx publish
+
+
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: changeset-test
+          message: 'release: update version'
