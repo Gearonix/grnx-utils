@@ -27,15 +27,13 @@ const publishLibrary = (name: string, tag: string) => {
   console.log(root)
   console.log(process.cwd())
 
-  fs.readdir(join(root, 'dist'), (err, files) => {
-    files.forEach((file) => {
-      console.log(file)
-    })
-  })
+  console.log(fs.existsSync(join(root, outputPath)))
 
   process.chdir(join(root, outputPath))
 
   // execSync(`npm publish --access public --tag ${tag}`)
+
+  process.exit(0)
 }
 
 publishLibrary(name, tag)
