@@ -23,10 +23,13 @@ const publishLibrary = (name: string, tag: string) => {
     outputPath,
     `Could not find "build.options.outputPath" of project "${name}". Is project.json configured  correctly?`
   )
+  console.log(outputPath)
+  console.log(root)
+  console.log(process.cwd())
 
   process.chdir(join(root, outputPath))
 
-  execSync(`npm publish --access public --tag ${tag}`)
+  // execSync(`npm publish --access public --tag ${tag}`)
 }
 
 publishLibrary(name, tag)
