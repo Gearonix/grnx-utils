@@ -27,7 +27,7 @@ const publishLibrary = (name: string, tag: string) => {
   console.log(root)
   console.log(process.cwd())
 
-  fs.readdir(root, (err, files) => {
+  fs.readdir(join(root, 'dist'), (err, files) => {
     files.forEach((file) => {
       console.log(file)
     })
