@@ -3,10 +3,7 @@ on:
   pull_request:
     branches: [ changeset-test ]
 jobs:
-  release:
-    uses: ./.github/workflows/release.yaml
   automerge:
-    needs: [release]
     runs-on: ubuntu-latest
     steps:
       - id: automerge
