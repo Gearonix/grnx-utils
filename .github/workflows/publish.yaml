@@ -1,15 +1,15 @@
-name: grnx-utils > Release
+name: grnx-utils > Publish
 
 on:
-  pull_request:
-    branches: [ changeset-test ]
+  push:
+    branches: [ changeset-test, 'release/v[0-9].[0-9]' ]
 permissions:
   contents: write
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  release:
+  publish:
     permissions: write-all
     name: Release
     runs-on: ubuntu-latest
