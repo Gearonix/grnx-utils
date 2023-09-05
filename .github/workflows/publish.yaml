@@ -16,8 +16,8 @@ permissions:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  test:
-    if: github.event.review.state == 'approved'
+  publish:
+    if: github.event.pull_request.merged == true
     permissions: write-all
     name: Release
     runs-on: ubuntu-latest
@@ -45,8 +45,6 @@ jobs:
           main-branch-name: 'changeset-test'
 
 
-
-
       - run: |
           echo "BASE: ${{ steps.setSHAs.outputs.base }}"
           echo "HEAD: ${{ steps.setSHAs.outputs.head }}"
@@ -54,6 +52,9 @@ jobs:
         with:
           node-version: 18.x
           cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
 
       - name: Install dependencies
         run: yarn install --immutable
@@ -66,9 +67,9 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+
       - name: Publish packages to NPM
         run: yarn nx publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
