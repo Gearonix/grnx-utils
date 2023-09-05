@@ -5,7 +5,7 @@ import {readCachedProjectGraph} from '@nx/devkit';
 import {resolveRoot} from './../helpers'
 import {invariant} from './../helpers'
 
-const [, , name, tag = 'next'] = process.argv;
+const [, , name, tag = 'latest'] = process.argv
 
 const publishLibrary = (name: string, tag: string) => {
   const graph = readCachedProjectGraph();
@@ -26,8 +26,7 @@ const publishLibrary = (name: string, tag: string) => {
 
   process.chdir(join(root, outputPath));
 
-  execSync('npm version patch');
-  execSync(`npm publish --access public --tag ${tag}`);
+  execSync(`npm publish --access public --tag ${tag}`)
 }
 
 publishLibrary(name, tag)

@@ -1,13 +1,6 @@
-const sdf = require('./dist/packages/eslint/index.cjs')
-// const { configure, presets } = require('eslint-kit')
-//
-// module.exports = sdf.default({
-//     root: __dirname,
-//     tsconfig: 'tsconfig.base.json'
-// })
-//
+const grnx = require('./dist/packages/eslint')
 
-
-module.exports = {
-  
-}
+module.exports = grnx({
+  root: __dirname,
+  tsconfig: 'tsconfig.base.json'
+})

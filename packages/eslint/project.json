@@ -23,7 +23,7 @@
       }
     },
     "publish": {
-      "command": "nx run scripts:run --script=publish.ts --argv=eslint",
+      "command": "yarn version patch && nx run scripts:run --script=publish.ts --argv=eslint",
       "dependsOn": [
         "build"
       ]
