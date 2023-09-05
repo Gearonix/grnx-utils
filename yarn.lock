@@ -2029,7 +2029,7 @@ __metadata:
     "@types/eslint": "npm:^8.44.2"
     "@types/node": "npm:18.7.1"
     eslint: "npm:8.41.0"
-    eslint-config-prettier: "npm:8.1.0"
+    eslint-config-prettier: "npm:9.0.0"
     eslint-kit: "npm:10.0.0"
     eslint-plugin-prefer-arrow: "npm:^1.2.3"
     nx: "npm:16.7.4"
@@ -5557,14 +5557,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.1.0":
-  version: 8.1.0
-  resolution: "eslint-config-prettier@npm:8.1.0"
+"eslint-config-prettier@npm:9.0.0":
+  version: 9.0.0
+  resolution: "eslint-config-prettier@npm:9.0.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 8c0c2f61825abc722f609650041216fea4400e8e69a40a01e0a0a47752701be9d9d579b82c79659c06a771fb8812ca7c13391ef190071ff36e5a633a32d121f0
+  checksum: 276b0b5b5b19066962a9ff3a16a553bdad28e1c0a2ea33a1d75d65c0428bb7b37f6e85ac111ebefcc9bdefb544385856dbe6eaeda5279c639e5549c113d27dda
   languageName: node
   linkType: hard
 
