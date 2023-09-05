@@ -2027,7 +2027,7 @@ __metadata:
     "@swc/helpers": "npm:~0.5.0"
     "@types/babel__core": "npm:^7"
     "@types/eslint": "npm:^8.44.2"
-    "@types/node": "npm:18.7.1"
+    "@types/node": "npm:20.5.9"
     eslint: "npm:8.41.0"
     eslint-config-prettier: "npm:8.1.0"
     eslint-kit: "npm:10.0.0"
@@ -3039,17 +3039,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:20.5.9":
   version: 20.5.9
   resolution: "@types/node@npm:20.5.9"
   checksum: bb3bf17d7583cfe6b0fca796d20e6b70513fedbe5ed7801789ab39d3f75f8783900595471cedc26eb8989cb54a8026506004764ed2c180f77ecac84c60e0075f
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:18.7.1":
-  version: 18.7.1
-  resolution: "@types/node@npm:18.7.1"
-  checksum: 7f8a92c56924a9bc8328e424d012dbda538c936685952750bed3b1e739491da3ee377354a3ea2dad6fb168a8d43430e788635c3000fbcca71d324618e0ec2804
   languageName: node
   linkType: hard
 
