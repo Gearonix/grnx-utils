@@ -3,7 +3,6 @@
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
   "description": "General configs, utilities, tools that can be used in other projects",
-  "private": true,
   "workspaces": [
     "packages/*",
     "tools/*"
