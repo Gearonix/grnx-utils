@@ -64,4 +64,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish packages to NPM
-        run: yarn nx publish root
+        run: yarn nx publish

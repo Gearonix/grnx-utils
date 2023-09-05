@@ -48,4 +48,4 @@ jobs:
 
       - name: Run NX checks
         run: |
-          yarn nx lint root
+          yarn nx lint
