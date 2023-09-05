@@ -2042,6 +2042,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@grnx-utils/scripts@workspace:tools/scripts":
+  version: 0.0.0-use.local
+  resolution: "@grnx-utils/scripts@workspace:tools/scripts"
+  languageName: unknown
+  linkType: soft
+
 "@humanwhocodes/config-array@npm:^0.11.8":
   version: 0.11.11
   resolution: "@humanwhocodes/config-array@npm:0.11.11"
