@@ -25,6 +25,9 @@ jobs:
       - name: Set nx SHA
         id: setSHAs
         uses: nrwl/nx-set-shas@v3
+        with:
+          main-branch-name: 'changeset-test'
+
 
       - run: |
           echo "BASE: ${{ steps.setSHAs.outputs.base }}"
