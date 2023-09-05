@@ -3,7 +3,7 @@
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
   "type": "commonjs",
-  "version": "1.2.3",
+  "version": "1.2.16",
   "main": "./index.cjs",
   "module": "./index.js",
   "types": "./index.cjs.d.ts",

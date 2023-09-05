@@ -39,8 +39,6 @@ const publishLibrary = (name: string, tag: string) => {
   process.chdir(join(root, outputPath))
 
   // execSync(`npm publish --access public --tag ${tag}`)
-
-  process.exit(0)
 }
 
 publishLibrary(name, tag)
