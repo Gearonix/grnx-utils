@@ -1,5 +1,17 @@
 # @grnx-utils/eslint
 
+## 1.3.1
+
+### Patch Changes
+
+- xgfxg
+
+## 1.3.0
+
+### Minor Changes
+
+- gjj
+
 ## 1.2.0
 
 ### Minor Changes

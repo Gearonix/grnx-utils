@@ -27,15 +27,6 @@ const publishLibrary = (name: string, tag: string) => {
   console.log(root)
   console.log(process.cwd())
 
-  console.log(fs.existsSync(join(root, outputPath)))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', 'dist')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', 'dist', 'packages')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', 'dist', 'packages', 'eslint')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', '..')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', '..', 'dist')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', '..', 'dist', 'packages')))
-  console.log(fs.existsSync(join(__dirname, '..', '..', '..', '..', 'dist', 'eslint')))
-
   process.chdir(join(root, outputPath))
 
   execSync(`npm publish --access public --tag ${tag}`)
