@@ -1,1 +1,3 @@
-export {createEslintConfig as grnx} from './config'
+import { createEslintConfig } from './config'
+
+export default createEslintConfig

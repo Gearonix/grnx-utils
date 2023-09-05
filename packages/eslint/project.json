@@ -15,15 +15,23 @@
         "tsConfig": "packages/eslint/tsconfig.lib.json",
         "assets": [],
         "project": "packages/eslint/package.json",
+        "skipTypeCheck": true,
         "compiler": "swc",
         "format": [
           "cjs",
           "esm"
         ]
+      },
+      "dependsOn": ["patch"]
+    },
+    "patch": {
+      "command": "yarn version patch",
+      "options": {
+        "cwd": "packages/eslint"
       }
     },
     "publish": {
-      "command": "yarn version patch && nx run scripts:run --script=publish.ts --argv=eslint",
+      "command": "nx run scripts:run --script=publish.ts --argv=eslint",
       "dependsOn": [
         "build"
       ]

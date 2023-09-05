@@ -1,6 +1,7 @@
 import { presets } from 'eslint-kit'
+
 import { prettierOptions } from './prettier'
-import { Options, ValidPresets } from './types'
+import { KitPreset, ValidPresets } from './types'
 
 export interface EslintKitPresetsOptions {
   tsconfig?: string
@@ -11,22 +12,30 @@ export interface EslintKitPresetsOptions {
 export const createEslintKitPresets = ({
   extensions = [],
   enableImports = false,
-  tsconfig = 'tsconfig.json',
-}: EslintKitPresetsOptions): Options['presets'] => {
-  return [
+  tsconfig = 'tsconfig.json'
+}: EslintKitPresetsOptions): KitPreset[] => {
+  const kitPresets = [
     presets.node(),
-    // presets.prettier(prettierOptions),
-    // presets.typescript({
-    //     tsconfig,
-    //     root: './'
-    // }),
-    presets.react(),
-    // enableImports && presets.imports({
-    //     sort: {
-    //         newline: true
-    //     }
-    // }),
-    // extensions?.map((name) => presets[name]()),
-  ] as Options['presets']
-}
+    presets.prettier(prettierOptions),
+    presets.typescript({
+      tsconfig
+    }),
+    presets.effector(),
+    presets.react()
+  ]
 
+  if (enableImports) {
+    kitPresets.push(
+      presets.imports({
+        sort: {
+          newline: true
+        }
+      }) as KitPreset
+    )
+  }
+
+  return [
+    ...kitPresets,
+    ...extensions.map((ext) => presets[ext]())
+  ] as KitPreset[]
+}

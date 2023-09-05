@@ -1,11 +1,14 @@
 {
   "name": "@grnx-utils/eslint",
   "type": "commonjs",
+  "version": "1.0.9",
   "main": "./index.cjs",
   "module": "./index.js",
-  "peerDependencies": {
-    "eslint": "^8.41.0",
-    "prettier": "^3.0.0"
+  "dependencies": {
+    "eslint-kit": "10.0.0"
   },
-  "version": "1.0.7"
+  "peerDependencies": {
+    "eslint": "^8.46.0",
+    "prettier": "^3.0.0"
+  }
 }

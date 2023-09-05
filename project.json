@@ -10,6 +10,12 @@
         "storage": "tmp/local-registry/storage"
       }
     },
+    "kill-tasks": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "taskkill /im node.exe /F"
+      }
+    },
     "lint": {
       "executor": "nx:run-commands",
       "options": {
