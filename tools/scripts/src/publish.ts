@@ -1,9 +1,9 @@
+import * as fs from 'fs'
+import { readCachedProjectGraph } from '@nx/devkit'
 import { execSync } from 'node:child_process'
 import { join } from 'node:path'
 
-import { readCachedProjectGraph } from '@nx/devkit'
-import { resolveRoot } from './../helpers'
-import { invariant } from './../helpers'
+import { invariant, resolveRoot } from '../helpers'
 
 const [, , name, tag = 'latest'] = process.argv
 
@@ -26,6 +26,12 @@ const publishLibrary = (name: string, tag: string) => {
   console.log(outputPath)
   console.log(root)
   console.log(process.cwd())
+
+  fs.readdir(root, (err, files) => {
+    files.forEach((file) => {
+      console.log(file)
+    })
+  })
 
   process.chdir(join(root, outputPath))
 

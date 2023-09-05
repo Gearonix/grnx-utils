@@ -65,7 +65,7 @@ jobs:
 
       - name: Run NX checks
         run: |
-          yarn nx publish root || exit 0
+          yarn nx publish root
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
