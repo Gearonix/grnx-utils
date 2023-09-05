@@ -1,4 +1,3 @@
-import * as fs from 'fs'
 import { readCachedProjectGraph } from '@nx/devkit'
 import { execSync } from 'node:child_process'
 import { join } from 'node:path'
@@ -23,9 +22,6 @@ const publishLibrary = (name: string, tag: string) => {
     outputPath,
     `Could not find "build.options.outputPath" of project "${name}". Is project.json configured  correctly?`
   )
-  console.log(outputPath)
-  console.log(root)
-  console.log(process.cwd())
 
   process.chdir(join(root, outputPath))
 
