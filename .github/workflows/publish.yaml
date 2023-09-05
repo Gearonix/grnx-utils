@@ -11,11 +11,14 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     permissions: write-all
     name: Release
     runs-on: ubuntu-latest
     steps:
+      - run: echo "event name is:" ${{ github.event_name }}
+      - run: echo "event type is:" ${{ github.event.action }}
+      - run: echo "event merged is:" ${{ github.event.pull_request.merged }}
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
