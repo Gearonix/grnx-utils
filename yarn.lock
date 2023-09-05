@@ -1999,6 +1999,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@grnx-utils/dev@workspace:tools/dev":
+  version: 0.0.0-use.local
+  resolution: "@grnx-utils/dev@workspace:tools/dev"
+  languageName: unknown
+  linkType: soft
+
 "@grnx-utils/eslint@workspace:packages/eslint":
   version: 0.0.0-use.local
   resolution: "@grnx-utils/eslint@workspace:packages/eslint"
