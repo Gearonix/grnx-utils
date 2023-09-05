@@ -58,7 +58,7 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: yarn nx release-publish root
-          version: yarn nx release-version root
+          version: yarn nx publish root || exit 0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
