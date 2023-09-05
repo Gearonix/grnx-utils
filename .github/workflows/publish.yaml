@@ -26,10 +26,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
-
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         with:
