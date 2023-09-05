@@ -25,10 +25,7 @@
       "dependsOn": ["patch"]
     },
     "patch": {
-      "command": "yarn version patch",
-      "options": {
-        "cwd": "packages/eslint"
-      }
+      "command": "yarn changeset version"
     },
     "publish": {
       "command": "nx run scripts:run --script=publish.ts --argv=eslint",
@@ -49,5 +46,5 @@
       }
     }
   },
-  "tags": []
+  "tags": ["library:eslint"]
 }

@@ -3,9 +3,9 @@
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
   "description": "General configs, utilities, tools that can be used in other projects",
-  "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "tools/*"
   ],
   "engines": {
     "node": ">=16.0.0",
@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.22.11",
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.2",
     "@nx/devkit": "^16.7.4",
     "@nx/js": "^16.7.4",
     "@nx/linter": "16.7.4",
