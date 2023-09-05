@@ -3,6 +3,8 @@ name: grnx-utils > Publish
 on:
   push:
     branches: [ changeset-test ]
+  pull_request:
+    branches: [ changeset-test ]
 
 permissions:
   contents: write
@@ -14,12 +16,12 @@ jobs:
     permissions: write-all
     name: Release
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     steps:
       - run: echo "event name is:" ${{ github.event_name }}
       - run: echo "event type is:" ${{ github.event.action }}
       - run: echo "event merged is:" ${{ github.event.pull_request.merged }}
       - uses: actions/checkout@v3
-        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
         with:
           fetch-depth: 0
 
