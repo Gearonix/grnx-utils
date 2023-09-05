@@ -1,0 +1,15 @@
+name: automerge
+on:
+  pull_request:
+    branches: [ changeset-test ]
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - id: automerge
+        name: Automerge
+        uses: "pascalgn/automerge-action@v0.15.6"
+        with:
+          MERGE_COMMIT_MESSAGE: 'release: update version'
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"

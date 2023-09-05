@@ -69,8 +69,3 @@ jobs:
 
       - name: Publish packages to NPM
         run: yarn nx publish
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'release: update version'
-          branch: changeset-test
