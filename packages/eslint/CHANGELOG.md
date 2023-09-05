@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 1.3.9
+
+### Patch Changes
+
+- [`4ec1a45`](https://github.com/Gearonix/grnx-utils/commit/4ec1a452f7d168919c47f93ce5d1826bc07058ed) Thanks [@Gearonix](https://github.com/Gearonix)! - cxvxcvvcx
+
 ## 1.3.8
 
 ### Patch Changes
