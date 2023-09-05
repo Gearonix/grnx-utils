@@ -2,7 +2,7 @@ name: grnx-utils > Nx CI
 
 on:
   push:
-    branches: [ changeset-test ]
+    branches: [ master ]
 permissions:
   contents: write
 
@@ -18,7 +18,7 @@ jobs:
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'changeset-test'
+          main-branch-name: 'master'
 
       - run: |
           echo "BASE: ${{ env.NX_BASE }}"
@@ -28,7 +28,7 @@ jobs:
         id: setSHAs
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'changeset-test'
+          main-branch-name: 'master'
 
 
 

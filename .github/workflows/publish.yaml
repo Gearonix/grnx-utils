@@ -2,9 +2,9 @@ name: grnx-utils > Publish
 
 on:
   push:
-    branches: [ changeset-test ]
+    branches: [ master ]
   pull_request:
-    branches: [ changeset-test ]
+    branches: [ master ]
     types:
       - closed
   pull_request_review:
@@ -33,7 +33,7 @@ jobs:
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'changeset-test'
+          main-branch-name: 'master'
 
       - run: |
           echo "BASE: ${{ env.NX_BASE }}"
@@ -42,7 +42,7 @@ jobs:
         id: setSHAs
         uses: nrwl/nx-set-shas@v3
         with:
-          main-branch-name: 'changeset-test'
+          main-branch-name: 'master'
 
 
       - run: |
