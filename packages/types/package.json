@@ -2,7 +2,7 @@
   "name": "@grnx-utils/types",
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "commonjs",
   "main": "./index.cjs",
   "module": "./index.js",
