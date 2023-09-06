@@ -11,7 +11,10 @@ export default defineConfig({
     cache: {
       dir: '../../node_modules/.vitest'
     },
+    coverage: {
+      provider: 'c8'
+    },
     environment: 'jsdom',
-    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+    include: ['src/tests/**/*.test.{ts,tsx}']
   }
 })

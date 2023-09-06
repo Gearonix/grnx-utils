@@ -45,7 +45,8 @@
             "output": "."
           }
         ]
-      }
+      },
+      "dependsOn": ["lint", "test"]
     },
     "test": {
       "executor": "@nx/vite:test",
