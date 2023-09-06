@@ -14,9 +14,10 @@ projects to avoid copying the source code in each project.
 Over time, the project will expand.
 <br/>
 
-## Available Libraries
+## Available packages
 
 - [@grnx-utils/eslint](https://github.com/Gearonix/grnx-utils/tree/master/packages/eslint)
+- [@grnx-utils/types](https://github.com/Gearonix/grnx-utils/tree/master/packages/types)
 
 ## Quick installation
 
