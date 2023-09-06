@@ -2,15 +2,11 @@
   "name": "@grnx-utils/types",
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "commonjs",
   "main": "./index.cjs",
   "module": "./index.js",
   "types": "./index.cjs.d.ts",
-  "files": [
-    "dist",
-    "README.md"
-  ],
   "devDependencies": {
     "@types/react": "^18.2.21",
     "preact": "^10.17.1",

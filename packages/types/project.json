@@ -24,11 +24,7 @@
           "cjs",
           "esm"
         ]
-      },
-      "dependsOn": ["patch"]
-    },
-    "patch": {
-      "command": "yarn changeset version"
+      }
     },
     "publish": {
       "command": "nx run scripts:run --script=publish.ts --argv=types",
