@@ -28,3 +28,17 @@ export type ReplaceName<
 > = Omit<T, Old> & {
   [key in K]: T[Old]
 }
+
+export type ObjectNullable<T> = { [K in keyof T]: T[K] | null }
+
+export type DeepNullable<T> = {
+  [K in keyof T]: DeepNullable<T[K]> | null
+}
+
+export type Required<T> = {
+  [P in keyof T]-?: T[P]
+}
+
+export type Mutable<T> = {
+  -readonly [P in keyof T]: T[P]
+}

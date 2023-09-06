@@ -24,3 +24,13 @@ Over time, the project will expand.
 ```
 yarn add @grnx-utils/<library>
 ```
+
+## Development and contribution
+
+### Internal scripts
+
+#### Create new library
+
+```shell
+nx create-library --name=<your-library>
+```

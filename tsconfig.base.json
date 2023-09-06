@@ -21,6 +21,9 @@
       "@grnx-utils/eslint": [
         "packages/eslint/src/index.ts"
       ],
+      "@grnx-utils/react-hooks": [
+        "packages/react-hooks/src/index.ts"
+      ],
       "@grnx-utils/types": [
         "packages/types/src/index.ts"
       ]
