@@ -2,4 +2,4 @@
 '@grnx-utils/types': minor
 ---
 
-Initial release
+initial release
