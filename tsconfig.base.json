@@ -20,6 +20,9 @@
     "paths": {
       "@grnx-utils/eslint": [
         "packages/eslint/src/index.ts"
+      ],
+      "@grnx-utils/types": [
+        "packages/types/src/index.ts"
       ]
     }
   },

@@ -41,7 +41,7 @@ grnx({
   // extensions provided by eslint-kit
   // in the default configuration there
   // are only 5 presets
-  extensions: ['vue, 'solidJs'],
+  extensions: ['vue', 'solidJs'],
   
   // enables eslint-kit allowDebug
   allowDebug: true,

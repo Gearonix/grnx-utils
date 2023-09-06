@@ -33,7 +33,15 @@
       "options": {
         "command": "yarn changeset version && yarn install"
       }
+    },
+    "create-library": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx run scripts:generate-library --name={args.name}"
+      }
     }
   },
-  "tags": ["nx-root"]
+  "tags": [
+    "nx-root"
+  ]
 }
