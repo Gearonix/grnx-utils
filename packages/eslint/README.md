@@ -18,8 +18,8 @@ const grnx = require('@grnx-utils/eslint')
 
 
 module.exports = grnx({
-  root: __dirname   // project root, required parameter
-  tsconfig: 'tsconfig.base.json',   // when using a monorepo like Nx
+  root: __dirname,   // project root,
+  tsconfig: 'tsconfig.base.json'   // when using a monorepo like Nx
 })
 
 ```
