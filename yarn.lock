@@ -2083,6 +2083,8 @@ __metadata:
   dependencies:
     "@types/react": "npm:^18.2.21"
     preact: "npm:^10.17.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
   peerDependencies:
     preact: ^10.15.1
     preact-compat: ^3.19.0

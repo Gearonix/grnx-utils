@@ -42,7 +42,7 @@ jobs:
           cache: 'yarn'
 
       - name: Installing dependencies
-        run: yarn install
+        run: yarn install --immutable
 
       - name: Run NX checks
         run: |
