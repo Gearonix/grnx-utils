@@ -9,6 +9,12 @@
       "options": {
         "cwd": "tools/scripts"
       }
+    },
+    "generate-library": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx g @nx/js:lib {args.name} --publishable --importPath=@grnx-utils/{args.name} --bundler=rollup --unitTestRunner=none"
+      }
     }
   }
 }
