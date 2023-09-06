@@ -16,10 +16,10 @@ Over time, the project will expand.
 
 ## Available Libraries
 
-- [@grnx/eslint](https://github.com/Gearonix/grnx-utils/tree/master/packages/eslint)
+- [@grnx-utils/eslint](https://github.com/Gearonix/grnx-utils/tree/master/packages/eslint)
 
 ## Quick installation
 
 ```
-yarn add @grnx/<library>
+yarn add @grnx-utils/<library>
 ```
