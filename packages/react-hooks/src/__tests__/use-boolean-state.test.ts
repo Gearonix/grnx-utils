@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks'
-import { renderChecks } from 'packages/react-hooks/src/tests/helpers'
+import { renderChecks } from './helpers'
 import { expect } from 'vitest'
 
 import { useBooleanState } from '../hooks'

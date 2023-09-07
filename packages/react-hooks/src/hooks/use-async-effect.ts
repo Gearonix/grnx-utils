@@ -2,7 +2,7 @@ import { DependencyList, useEffect } from 'react'
 
 export const useAsyncEffect = <T>(
   cb: () => Promise<T>,
-  deps: DependencyList
+  deps: DependencyList = []
 ) => {
   useEffect(() => {
     cb()

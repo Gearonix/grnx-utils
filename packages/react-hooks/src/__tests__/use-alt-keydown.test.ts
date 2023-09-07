@@ -14,23 +14,22 @@ describe('hook.use-alt-keydown', () => {
     const { result } = renderHook(() => useAltKeyDown())
     const keyboard = result.current
 
-    const shouldBePressed = vi.fn()
-    const shouldNotBePressed = vi.fn()
+    const callback = vi.fn()
 
     act(() => {
       keyboard.on({
         // eslint-disable-next-line prettier/prettier
-        'O': () => shouldBePressed()
+        'O': () => callback()
       })
     })
+
+    await userEvent.keyboard('{Alt>}a{/Alt}')
+
+    expect(callback).not.toBeCalled()
 
     // translates to: Alt(down), O, Alt(up)
     await userEvent.keyboard('{Alt>}o{/Alt}')
 
-    expect(shouldBePressed).toHaveBeenCalledOnce()
-
-    await userEvent.keyboard('{Alt>}a{/Alt}')
-
-    expect(shouldNotBePressed).not.toBeCalled()
+    expect(callback).toHaveBeenCalledOnce()
   })
 })

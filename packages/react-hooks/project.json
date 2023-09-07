@@ -12,7 +12,8 @@
       "options": {
         "lintFilePatterns": [
           "packages/react-hooks/**/*.{ts,tsx,js,jsx}"
-        ]
+        ],
+        "fix": true
       }
     },
     "publish": {

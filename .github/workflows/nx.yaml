@@ -47,3 +47,4 @@ jobs:
       - name: Run NX checks
         run: |
           yarn nx lint
+          yarn nx test

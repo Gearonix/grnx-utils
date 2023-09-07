@@ -41,7 +41,8 @@
         "lintFilePatterns": [
           "packages/types/**/*.ts",
           "packages/types/package.json"
-        ]
+        ],
+        "fix": true
       }
     }
   },

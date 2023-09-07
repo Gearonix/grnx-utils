@@ -43,7 +43,8 @@
           "packages/eslint/**/*.ts",
           "packages/eslint/package.json"
         ]
-      }
+      },
+      "fix": true
     }
   },
   "tags": ["library:eslint"]
