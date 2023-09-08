@@ -42,7 +42,7 @@
     "@vitejs/plugin-react": "~4.0.0",
     "@vitest/coverage-c8": "~0.32.0",
     "@vitest/ui": "~0.32.0",
-    "babel-plugin-styled-components": "1.10.7",
+    "babel-plugin-styled-components": "2.1.4",
     "eslint": "8.41.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
