@@ -1,0 +1,70 @@
+{
+  "name": "css-presets",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/css-presets/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/css-presets/**/*.{ts,tsx,js,jsx}"
+        ],
+        "fix": true
+      }
+    },
+    "publish": {
+      "command": "nx run scripts:run --script=publish.ts --argv=css-presets",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/css-presets",
+        "tsConfig": "packages/css-presets/tsconfig.lib.json",
+        "project": "packages/css-presets/package.json",
+        "entryFile": "packages/css-presets/src/index.ts",
+        "skipTypeCheck": true,
+        "external": [
+          "react",
+          "react-dom",
+          "react/jsx-runtime"
+        ],
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "packages/css-presets/README.md",
+            "input": ".",
+            "output": "."
+          },
+          {
+            "glob": "packages/css-presets/src/scss/**.scss",
+            "input": ".",
+            "output": "scss"
+          }
+        ]
+      },
+      "dependsOn": ["^build", "lint", "test"]
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/css-presets"
+      }
+    }
+  },
+  "tags": ["library:css-presets"]
+}

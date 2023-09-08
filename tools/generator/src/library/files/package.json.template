@@ -1,0 +1,14 @@
+{
+  "name": "@grnx-utils/<%= name %>",
+  "author": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "main": "./index.cjs.js",
+  "module": "./index.esm.js",
+  "types": "./src/index.d.ts",
+  "typings": "/src/index.d.ts",
+  "keywords": [
+    "grnx"
+  ]
+}

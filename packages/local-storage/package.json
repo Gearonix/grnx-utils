@@ -1,0 +1,17 @@
+{
+  "name": "@grnx-utils/local-storage",
+  "author": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "./index.cjs.js",
+  "module": "./index.esm.js",
+  "types": "./src/index.d.ts",
+  "typings": "/src/index.d.ts",
+  "keywords": [
+    "local-storage",
+    "react",
+    "next",
+    "grnx"
+  ]
+}

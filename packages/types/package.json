@@ -2,7 +2,7 @@
   "name": "@grnx-utils/types",
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "commonjs",
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
@@ -21,6 +21,13 @@
     "react-dom": ">=16",
     "typescript": "~5.1.3"
   },
+  "keywords": [
+    "react",
+    "preact",
+    "types",
+    "typescript",
+    "grnx"
+  ],
   "peerDependenciesMeta": {
     "preact": {
       "optional": true

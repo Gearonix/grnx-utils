@@ -1,0 +1,26 @@
+{
+  "name": "@grnx-utils/css-presets",
+  "auhtor": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
+  "type": "commonjs",
+  "version": "0.1.0",
+  "main": "./index.esm.js",
+  "module": "./index.esm.js",
+  "types": "./src/index.d.ts",
+  "typings": "./src/index.d.ts",
+  "keywords": [
+    "css",
+    "react",
+    "styled-components",
+    "css",
+    "grnx"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "styled-components": "5.3.6"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@grnx-utils/<%= name %>",
+  "auhtor": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
+  "type": "commonjs",
+  "version": "0.0.1",
+  "main": "./index.esm.js",
+  "module": "./index.esm.js",
+  "types": "./src/index.d.ts",
+  "typings": "./src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "grnx"
+  ],
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}

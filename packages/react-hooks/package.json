@@ -3,7 +3,7 @@
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
   "type": "commonjs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./index.esm.js",
   "module": "./index.esm.js",
   "types": "./src/index.d.ts",
@@ -14,5 +14,11 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
-  }
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "grnx"
+  ]
 }

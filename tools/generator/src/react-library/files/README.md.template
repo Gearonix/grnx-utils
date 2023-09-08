@@ -1,0 +1,11 @@
+## [@grnx-utils/<%= name %>](https://github.com/Gearonix/grnx-utils/tree/master/packages/<%= name %>)
+[![npm version](https://img.shields.io/npm/v/@grnx-utils/<%= name %>.svg?style=flat)](https://www.npmjs.com/package/@grnx-utils/<%= name %>)  ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)<br/>
+<h3></h3>
+
+Library description
+
+## Installation
+
+```
+yarn add @grnx-utils/<%= name %> -D
+```

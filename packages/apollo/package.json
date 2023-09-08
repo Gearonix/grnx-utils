@@ -1,0 +1,22 @@
+{
+  "name": "@grnx-utils/apollo",
+  "author": "Gearonix egor.uzhanin@gmail.com",
+  "repository": "git@github.com:Gearonix/grnx-utils.git",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "./index.cjs.js",
+  "module": "./index.esm.js",
+  "types": "./src/index.d.ts",
+  "typings": "/src/index.d.ts",
+  "keywords": [
+    "react",
+    "graphql",
+    "apollo",
+    "grnx"
+  ],
+  "peerDependencies": {
+    "@apollo/client": "^3.8.3",
+    "graphql": "^16.8.0",
+    "graphql-tag": "^2.12.6"
+  }
+}
