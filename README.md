@@ -20,6 +20,7 @@ Over time, the project will expand.
 - [@grnx-utils/react-hooks](./packages/react-hooks) &mdash; a collection of react hooks.
 - [@grnx-utils/types](./packages/types) &mdash; collection of types and interfaces for your project
 - [@grnx-utils/apollo](./packages/apollo) &mdash; wrapper over [@apollo/client](https://www.apollographql.com/docs/react/), which makes the syntax cleaner.
+- [@grnx-utils/local-storage](./packages/local-storage) &mdash; provides a convenient API for working with localStorage.
 
 
 ## Quick installation

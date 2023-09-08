@@ -1,0 +1,50 @@
+{
+  "name": "local-storage",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/local-storage/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/local-storage",
+        "main": "packages/local-storage/src/index.ts",
+        "tsConfig": "packages/local-storage/tsconfig.lib.json",
+        "assets": [{
+          "glob": "README.md",
+          "input": "packages/local-storage",
+          "output": "."
+        }],
+        "project": "packages/local-storage/package.json",
+        "compiler": "swc",
+        "format": [
+          "cjs",
+          "esm"
+        ]
+      }
+    },
+    "publish": {
+      "command": "nx run scripts:run --script=publish.ts --argv=local-storage",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/local-storage/**/*.ts",
+          "packages/local-storage/package.json"
+        ],
+        "fix": true
+      }
+    }
+  },
+  "tags": ["library:local-storage"]
+}
