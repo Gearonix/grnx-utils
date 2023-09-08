@@ -2245,7 +2245,7 @@ __metadata:
     "@nx/react": ^16.8.0
     "@nx/rollup": 16.7.4
     "@nx/vite": 16.8.0
-    "@rollup/plugin-url": ^7.0.0
+    "@rollup/plugin-url": ^8.0.0
     "@svgr/rollup": ^8.0.1
     "@swc/cli": ~0.1.62
     "@swc/core": ~1.3.51
@@ -3458,16 +3458,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/plugin-url@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@rollup/plugin-url@npm:7.0.0"
+"@rollup/plugin-url@npm:^8.0.0":
+  version: 8.0.1
+  resolution: "@rollup/plugin-url@npm:8.0.1"
   dependencies:
-    "@rollup/pluginutils": "npm:^4.2.1"
-    make-dir: "npm:^3.1.0"
-    mime: "npm:^2.4.6"
+    "@rollup/pluginutils": ^5.0.1
+    make-dir: ^3.1.0
+    mime: ^3.0.0
   peerDependencies:
-    rollup: ^1.20.0||^2.0.0
-  checksum: f85d90dbeb45d2c759d22245df188f663d42e26c7cdd652b1e1c50897a7a221e126550c04005883da7c13a7c97a42f43a9746f762fed9fb8d5c4058907d20f90
+    rollup: ^1.20.0||^2.0.0||^3.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: 25a16622feeec63d958117f7ab65b3a4f72bab4ab86a4c7d5447ec646e88b5ac47186e344a2fdf179e1c12b5a9e76b8edbf568f5f76f7c25e0168ddd6374501e
   languageName: node
   linkType: hard
 
@@ -3484,7 +3487,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^4.1.2, @rollup/pluginutils@npm:^4.2.1":
+"@rollup/pluginutils@npm:^4.1.2":
   version: 4.2.1
   resolution: "@rollup/pluginutils@npm:4.2.1"
   dependencies:
@@ -3494,7 +3497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.0.2":
+"@rollup/pluginutils@npm:^5.0.1, @rollup/pluginutils@npm:^5.0.2":
   version: 5.0.4
   resolution: "@rollup/pluginutils@npm:5.0.4"
   dependencies:
@@ -11172,7 +11175,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:2.6.0, mime@npm:^2.4.6":
+"mime@npm:2.6.0":
   version: 2.6.0
   resolution: "mime@npm:2.6.0"
   bin:
@@ -11181,7 +11184,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:3.0.0":
+"mime@npm:3.0.0, mime@npm:^3.0.0":
   version: 3.0.0
   resolution: "mime@npm:3.0.0"
   bin:
