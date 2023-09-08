@@ -16,9 +16,9 @@ Over time, the project will expand.
 
 ## Available packages
 
-- [@grnx-utils/eslint](https://github.com/Gearonix/grnx-utils/tree/master/packages/eslint)
-- [@grnx-utils/react-hooks](https://github.com/Gearonix/grnx-utils/tree/master/packages/react-hooks)
-- [@grnx-utils/types](https://github.com/Gearonix/grnx-utils/tree/master/packages/types)
+- [@grnx-utils/eslint](./packages/eslint)  &mdash; eslint config built on top of [eslint-kit](https://github.com/eslint-kit/eslint-kit) presets.
+- [@grnx-utils/react-hooks](./packages/react-hooks) &mdash; a collection of react hooks.
+- [@grnx-utils/types](./packages/types) &mdash; collection of types and interfaces for your project
 
 ## Quick installation
 
@@ -35,6 +35,7 @@ yarn add @grnx-utils/<library>
 ```shell
 nx library --name=<your-library>
 ```
+This command will launch [`@grnx-utils/generator`](./tools/generator)
 
 #### Run tests with Vitest
 
