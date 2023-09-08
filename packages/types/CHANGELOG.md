@@ -1,5 +1,20 @@
 # @grnx-utils/types
 
+## 1.0.0
+
+### Major Changes
+
+- [#35](https://github.com/Gearonix/grnx-utils/pull/35) [`cf5bc1d`](https://github.com/Gearonix/grnx-utils/commit/cf5bc1d46039e0cf3104c6a6e75c126921414695) Thanks [@Gearonix](https://github.com/Gearonix)! - added VoidFunction type
+
+### Minor Changes
+
+- [#35](https://github.com/Gearonix/grnx-utils/pull/35) [`27ff28b`](https://github.com/Gearonix/grnx-utils/commit/27ff28bea76ffb03e2c079bb7f13341ffc09694b) Thanks [@Gearonix](https://github.com/Gearonix)! - added ObjectNullable, DeepNullable, Required and Mutable types,
+  update README.md
+
+### Patch Changes
+
+- [#35](https://github.com/Gearonix/grnx-utils/pull/35) [`3db6ac8`](https://github.com/Gearonix/grnx-utils/commit/3db6ac8f272f810f3b4a86d0ed9a3b15b1653046) Thanks [@Gearonix](https://github.com/Gearonix)! - updated packages json `types` and main entries
+
 ## 0.1.0
 
 ### Minor Changes

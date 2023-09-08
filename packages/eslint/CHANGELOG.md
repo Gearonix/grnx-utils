@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 1.3.18
+
+### Patch Changes
+
+- [#35](https://github.com/Gearonix/grnx-utils/pull/35) [`3db6ac8`](https://github.com/Gearonix/grnx-utils/commit/3db6ac8f272f810f3b4a86d0ed9a3b15b1653046) Thanks [@Gearonix](https://github.com/Gearonix)! - updated packages json `types` and main entries
+
 ## 1.3.16
 
 ### Patch Changes
