@@ -1,0 +1,23 @@
+{
+  "name": "publishable-library",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "tools/generator/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "tools/generator/**/*.ts",
+          "tools/generator/package.json",
+          "tools/generator/executors.json",
+          "tools/generator/generators.json"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

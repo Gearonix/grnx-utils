@@ -33,10 +33,10 @@ yarn add @grnx-utils/<library>
 #### Create new library
 
 ```shell
-nx create-library --name=<your-library>
+nx library --name=<your-library>
 ```
 
-#### Run tests
+#### Run tests with Vitest
 
 ```shell
 nx test
