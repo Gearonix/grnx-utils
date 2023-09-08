@@ -1,0 +1,50 @@
+{
+  "name": "apollo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/apollo/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/apollo",
+        "main": "packages/apollo/src/index.ts",
+        "tsConfig": "packages/apollo/tsconfig.lib.json",
+        "assets": [{
+          "glob": "README.md",
+          "input": "packages/apollo",
+          "output": "."
+        }],
+        "project": "packages/apollo/package.json",
+        "compiler": "swc",
+        "format": [
+          "cjs",
+          "esm"
+        ]
+      }
+    },
+    "publish": {
+      "command": "nx run scripts:run --script=publish.ts --argv=apollo",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/apollo/**/*.ts",
+          "packages/apollo/package.json"
+        ],
+        "fix": true
+      }
+    }
+  },
+  "tags": ["library:apollo"]
+}
