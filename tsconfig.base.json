@@ -24,11 +24,14 @@
       "@grnx-utils/react-hooks": [
         "packages/react-hooks/src/index.ts"
       ],
-      "@grnx-utils/testvbn": [
-        "packages/sdf/test/src/index.ts"
-      ],
       "@grnx-utils/types": [
         "packages/types/src/index.ts"
+      ],
+      "@grnx/apollo": [
+        "packages/apollo/src/index.ts"
+      ],
+      "@grnx/local-storage": [
+        "packages/local-storage/src/index.ts"
       ],
       "@grnx/react": [
         "packages/react/src/index.ts"
