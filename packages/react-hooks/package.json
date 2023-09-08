@@ -14,5 +14,11 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
-  }
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "grnx"
+  ]
 }

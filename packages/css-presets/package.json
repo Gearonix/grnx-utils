@@ -8,6 +8,13 @@
   "module": "./index.esm.js",
   "types": "./src/index.d.ts",
   "typings": "./src/index.d.ts",
+  "keywords": [
+    "css",
+    "react",
+    "styled-components",
+    "css",
+    "grnx"
+  ],
   "publishConfig": {
     "access": "public"
   },

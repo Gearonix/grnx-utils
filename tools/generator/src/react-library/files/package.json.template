@@ -11,6 +11,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "grnx"
+  ],
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"

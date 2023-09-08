@@ -21,6 +21,13 @@
     "react-dom": ">=16",
     "typescript": "~5.1.3"
   },
+  "keywords": [
+    "react",
+    "preact",
+    "types",
+    "typescript",
+    "grnx"
+  ],
   "peerDependenciesMeta": {
     "preact": {
       "optional": true
