@@ -12,7 +12,7 @@ yarn add @grnx-utils/css-presets -D
 
 ## Usage
 
-### [styled-components](https://styled-components.com)
+### Styled components
 
 ```ts
 import styled from 'styled-components'
@@ -40,7 +40,7 @@ export const TerminalButtons = styled.div`
 `
 ```
 
-### [scss](https://sass-lang.com/)
+### SCSS
 
 ```scss
 @use '@grnx-utils/css-presets/scss/index.scss' as s;

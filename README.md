@@ -22,7 +22,7 @@ Over time, the project will expand.
 - [@grnx-utils/react-hooks](./packages/react-hooks) &mdash; collection of React hooks
 - [@grnx-utils/types](./packages/types) &mdash; collection of types and interfaces for your project
 - [@grnx-utils/css-presets](./packages/css-presets) &mdash; set of mixins and variables for different CSS libraries and frameworks
-- [@grnx-utils/react](./packages/react) &mdash; set of React components that make react syntactically better
+- [@grnx-utils/react](./packages/react) &mdash; set of React components that make React syntactically better
 
 
 ## Quick installation
