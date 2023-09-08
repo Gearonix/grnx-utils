@@ -2255,7 +2255,7 @@ __metadata:
     "@testing-library/user-event": latest
     "@types/babel__core": ^7
     "@types/eslint": ^8.44.2
-    "@types/node": 18.14.2
+    "@types/node": 18.17.14
     "@types/react": ^18.2.21
     "@types/react-dom": 18.2.6
     "@vitejs/plugin-react": ~4.0.0
@@ -4209,10 +4209,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.14.2":
-  version: 18.14.2
-  resolution: "@types/node@npm:18.14.2"
-  checksum: 53c07e721f6ae33de71306f6a0b75dae6066a4f55bd5484c93bd59ff25f0c5f004ceafeef509a4d0cb9e24a247efc34d50489bcc1b05a53ecc68e2fc088e65cb
+"@types/node@npm:18.17.14":
+  version: 18.17.14
+  resolution: "@types/node@npm:18.17.14"
+  checksum: f96ce1e588426a26cf82440193084f8bbab47bfb3c2e668cf174095f99ce808a20654b2137448c7e88cfd7b6c2b8521ffb6f714f521b3502ac595a0df0bff679
   languageName: node
   linkType: hard
 
