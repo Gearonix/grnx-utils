@@ -1,6 +1,9 @@
 export type AnyObject = Record<string, unknown>
 
-export type AnyFunction<T = void> = (...args: any[]) => T
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type AnyFunction<T = void, R = any> = (...args: R[]) => T
+
+export type VoidFunction<Args = void> = AnyFunction<void, Args>
 
 export type Nullable<T> = T | null
 
@@ -27,4 +30,18 @@ export type ReplaceName<
   K extends string
 > = Omit<T, Old> & {
   [key in K]: T[Old]
+}
+
+export type ObjectNullable<T> = { [K in keyof T]: T[K] | null }
+
+export type DeepNullable<T> = {
+  [K in keyof T]: DeepNullable<T[K]> | null
+}
+
+export type Required<T> = {
+  [P in keyof T]-?: T[P]
+}
+
+export type Mutable<T> = {
+  -readonly [P in keyof T]: T[P]
 }
