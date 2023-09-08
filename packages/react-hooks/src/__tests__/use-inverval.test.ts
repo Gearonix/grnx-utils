@@ -1,9 +1,9 @@
 import { AnyFunction } from '@grnx-utils/types'
 import { act, renderHook } from '@testing-library/react-hooks'
-import { renderChecks } from './helpers'
 import { afterEach, beforeEach, expect } from 'vitest'
 
 import { useInterval } from '../hooks'
+import { renderChecks } from './helpers'
 
 describe('hook.use-interval', () => {
   let callback: AnyFunction

@@ -46,5 +46,6 @@ jobs:
 
       - name: Run NX checks
         run: |
+          yarn nx build eslint
           yarn nx lint
           yarn nx test
