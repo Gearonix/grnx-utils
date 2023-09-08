@@ -18,6 +18,7 @@
           "input": "packages/local-storage",
           "output": "."
         }],
+        "skipTypeCheck": true,
         "project": "packages/local-storage/package.json",
         "compiler": "swc",
         "format": [

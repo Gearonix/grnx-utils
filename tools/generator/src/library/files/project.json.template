@@ -13,6 +13,7 @@
         "outputPath": "dist/packages/<%= name %>",
         "main": "packages/<%= name %>/src/index.ts",
         "tsConfig": "packages/<%= name %>/tsconfig.lib.json",
+        "skipTypeCheck": true,
         "assets": [{
           "glob": "README.md",
           "input": "packages/<%= name %>",

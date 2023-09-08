@@ -13,6 +13,7 @@
         "outputPath": "dist/packages/apollo",
         "main": "packages/apollo/src/index.ts",
         "tsConfig": "packages/apollo/tsconfig.lib.json",
+        "skipTypeCheck": true,
         "assets": [{
           "glob": "README.md",
           "input": "packages/apollo",

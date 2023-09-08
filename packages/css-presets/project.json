@@ -34,12 +34,11 @@
         "entryFile": "packages/css-presets/src/index.ts",
         "skipTypeCheck": true,
         "external": [
-          "css-presets",
-          "css-presets-dom",
-          "css-presets/jsx-runtime",
-          "@grnx-utils/types"
+          "react",
+          "react-dom",
+          "react/jsx-runtime"
         ],
-        "rollupConfig": "@nx/css-presets/plugins/bundle-rollup",
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
         "compiler": "babel",
         "assets": [
           {
@@ -48,7 +47,7 @@
             "output": "."
           },
           {
-            "glob": "packages/css-presets/scss/**.scss",
+            "glob": "packages/css-presets/src/scss/**.scss",
             "input": ".",
             "output": "scss"
           }

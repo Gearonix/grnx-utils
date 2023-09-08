@@ -2333,6 +2333,7 @@ __metadata:
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
+    styled-components: 5.3.6
   languageName: unknown
   linkType: soft
 

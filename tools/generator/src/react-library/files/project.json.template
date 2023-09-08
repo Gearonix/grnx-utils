@@ -34,12 +34,11 @@
         "entryFile": "packages/<%= name %>/src/index.ts",
         "skipTypeCheck": true,
         "external": [
-          "<%= name %>",
-          "<%= name %>-dom",
-          "<%= name %>/jsx-runtime",
-          "@grnx-utils/types"
+          "react",
+          "react-dom",
+          "react/jsx-runtime"
         ],
-        "rollupConfig": "@nx/<%= name %>/plugins/bundle-rollup",
+        "rollupConfig": "@nx/react/plugins/bundle-rollup",
         "compiler": "babel",
         "assets": [
           {
