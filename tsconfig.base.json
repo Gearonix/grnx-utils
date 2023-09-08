@@ -29,6 +29,9 @@
       ],
       "@grnx-utils/types": [
         "packages/types/src/index.ts"
+      ],
+      "@grnx/react": [
+        "packages/react/src/index.ts"
       ]
     }
   },

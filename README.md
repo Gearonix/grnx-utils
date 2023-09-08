@@ -8,7 +8,7 @@
 
 ## What is it?
 
-This is just a set of utilities and presets for other
+This is just a set of small utilities and presets for other
 projects to avoid copying the source code in each project.
 
 Over time, the project will expand.
@@ -17,10 +17,11 @@ Over time, the project will expand.
 ## Available packages
 
 - [@grnx-utils/eslint](./packages/eslint)  &mdash; eslint config built on top of [eslint-kit](https://github.com/eslint-kit/eslint-kit) presets.
-- [@grnx-utils/react-hooks](./packages/react-hooks) &mdash; a collection of react hooks.
+- [@grnx-utils/react-hooks](./packages/react-hooks) &mdash; collection of react hooks.
 - [@grnx-utils/types](./packages/types) &mdash; collection of types and interfaces for your project
 - [@grnx-utils/apollo](./packages/apollo) &mdash; wrapper over [@apollo/client](https://www.apollographql.com/docs/react/), which makes the syntax cleaner.
-- [@grnx-utils/local-storage](./packages/local-storage) &mdash; provides a convenient API for working with localStorage.
+- [@grnx-utils/local-storage](./packages/local-storage) &mdash; convenient API for working with localStorage.
+- [@grnx-utils/react](./packages/react) &mdash; set of react components that make react syntactically better.
 
 
 ## Quick installation

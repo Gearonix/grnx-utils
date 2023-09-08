@@ -6,10 +6,10 @@ Provides a convenient API for working with localStorage.
 
 ## Features:
 - Automatic parsing if the value is in JSON format
-- Automatic JSON.stringify if you want to set the object to localStorage
-- `Next.js` support (check if `window !== 'undefined'`)
-- Ability to add a prefix to keys (useful if you have several applications on the same domain. For example, turns `'AUTH_TOKEN'` into `'myapp__AUTH_TOKEN'`)
-- Ability to disable setting new values if necessary.
+- Automatic JSON.stringify if you want to set non-primitive type to localStorage
+- `Next.js` support (check if `typeof window !== 'undefined'`)
+- Ability to add a prefix to keys (useful if you have several applications on the same domain. For example, turns `AUTH_TOKEN` into `myapp__AUTH_TOKEN`)
+- Ability to disable setting new values if necessary
 - LocalStorage key typing (with typescript)
 
 ## Installation
@@ -24,7 +24,7 @@ yarn add @grnx-utils/local-storage -D
 import { createStorage } from '@grnx-utils/local-storage'
 
 export enum LocalStorage {
-    someKey = 'example'
+    someKey = 'someKey'
 }
 
 const storage = createStorage<LocalStorage>({
@@ -48,7 +48,7 @@ storage.disable() // will stop work
 ```
 ## Comparison with regular localStorage
 ```ts
-// @grnx-utils/storage
+// @grnx-utils/local-storage
 
 storage.set('someKey', {
     someKey: 'value'
