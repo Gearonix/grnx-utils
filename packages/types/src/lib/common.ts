@@ -3,6 +3,8 @@ export type AnyObject = Record<string, unknown>
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type AnyFunction<T = void, R = any> = (...args: R[]) => T
 
+export type VoidFunction<Args = void> = AnyFunction<void, Args>
+
 export type Nullable<T> = T | null
 
 export type Undefinable<T> = T | undefined

@@ -1,6 +1,16 @@
+import { VoidFunction } from '@grnx-utils/types'
 import { useState } from 'react'
 
-export const useBooleanState = (initialValue = false) => {
+export interface UseBooleanStatePayload {
+  on: VoidFunction
+  off: VoidFunction
+  toggle: VoidFunction
+  val: boolean
+}
+
+export const useBooleanState = (
+  initialValue = false
+): UseBooleanStatePayload => {
   const [val, setValue] = useState<boolean>(initialValue)
 
   const off = () => setValue(false)
