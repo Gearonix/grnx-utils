@@ -17,6 +17,7 @@ Over time, the project will expand.
 ## Available packages
 
 - [@grnx-utils/eslint](https://github.com/Gearonix/grnx-utils/tree/master/packages/eslint)
+- [@grnx-utils/react-hooks](https://github.com/Gearonix/grnx-utils/tree/master/packages/react-hooks)
 - [@grnx-utils/types](https://github.com/Gearonix/grnx-utils/tree/master/packages/types)
 
 ## Quick installation
@@ -33,4 +34,10 @@ yarn add @grnx-utils/<library>
 
 ```shell
 nx create-library --name=<your-library>
+```
+
+#### Run tests
+
+```shell
+nx test
 ```
