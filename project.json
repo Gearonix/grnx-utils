@@ -28,10 +28,10 @@
         "command": "yarn changeset version && yarn install"
       }
     },
-    "library": {
+    "gen": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "nx generate @grnx-utils/generator:library --name={args.name}"
+        "command": "nx generate @grnx-utils/generator:{args.type} --name={args.name}"
       }
     },
     "lint": {

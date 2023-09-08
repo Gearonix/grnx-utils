@@ -1,0 +1,66 @@
+{
+  "name": "<%= name %>",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/<%= name %>/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/<%= name %>/**/*.{ts,tsx,js,jsx}"
+        ],
+        "fix": true
+      }
+    },
+    "publish": {
+      "command": "nx run scripts:run --script=publish.ts --argv=<%= name %>",
+      "dependsOn": [
+        "build"
+      ]
+    },
+    "build": {
+      "executor": "@nx/rollup:rollup",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/<%= name %>",
+        "tsConfig": "packages/<%= name %>/tsconfig.lib.json",
+        "project": "packages/<%= name %>/package.json",
+        "entryFile": "packages/<%= name %>/src/index.ts",
+        "skipTypeCheck": true,
+        "external": [
+          "<%= name %>",
+          "<%= name %>-dom",
+          "<%= name %>/jsx-runtime",
+          "@grnx-utils/types"
+        ],
+        "rollupConfig": "@nx/<%= name %>/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "packages/<%= name %>/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      },
+      "dependsOn": ["^build", "lint", "test"]
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/packages/<%= name %>"
+      }
+    }
+  },
+  "tags": ["library:<%= name %>"]
+}

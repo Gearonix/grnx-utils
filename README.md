@@ -34,12 +34,19 @@ yarn add @grnx-utils/<library>
 
 ### Internal scripts
 
-#### Create new library
+#### Create library
 
 ```shell
-nx library --name=<your-library>
+nx gen --type=library --name=<your-library>
 ```
-This command will launch [`@grnx-utils/generator`](./tools/generator)
+
+#### Create react library
+
+```shell
+nx gen --type=react-library --name=<your-library>
+```
+
+This commands will launch [`@grnx-utils/generator`](./tools/generator)
 
 #### Run tests with Vitest
 
