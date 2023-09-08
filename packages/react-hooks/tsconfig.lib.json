@@ -2,6 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
+    "declaration": true,
+    "baseUrl": ".",
     "types": [
       "node",
       "@nx/react/typings/cssmodule.d.ts",
@@ -9,7 +11,13 @@
       "vitest/globals",
       "vitest/importMeta",
       "vite/client"
-    ]
+    ],
+    "paths": {
+      "@grnx-utils/types": [
+        "../packages/types/src/index.ts"
+      ]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["src/__tests__/**"]
 }

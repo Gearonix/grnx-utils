@@ -32,10 +32,12 @@
         "tsConfig": "packages/react-hooks/tsconfig.lib.json",
         "project": "packages/react-hooks/package.json",
         "entryFile": "packages/react-hooks/src/index.ts",
+        "skipTypeCheck": true,
         "external": [
           "react",
           "react-dom",
-          "react/jsx-runtime"
+          "react/jsx-runtime",
+          "@grnx-utils/types"
         ],
         "rollupConfig": "@nx/react/plugins/bundle-rollup",
         "compiler": "babel",
@@ -47,7 +49,7 @@
           }
         ]
       },
-      "dependsOn": ["lint", "test"]
+      "dependsOn": ["^build", "lint", "test"]
     },
     "test": {
       "executor": "@nx/vite:test",
