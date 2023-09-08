@@ -4,6 +4,10 @@
 
 Custom `eslint` configuration built on top of [eslint-kit](https://github.com/eslint-kit/eslint-kit) presets. <br/>
 Adds eslint plugins like `@nx` , `prefer-arrow` and more.
+The config will be expanded in the future.
+
+[Eslint-kit](https://github.com/eslint-kit/eslint-kit) is a library that provides ready-made 
+eslint presets and it belongs to Evgeny Zakharov.
 
 ## Installation
 
@@ -18,7 +22,7 @@ const grnx = require('@grnx-utils/eslint')
 
 
 module.exports = grnx({
-  root: __dirname,   // project root,
+  root: __dirname,   // project root (required)
   tsconfig: 'tsconfig.base.json'   // when using a monorepo like Nx
 })
 
@@ -28,26 +32,35 @@ module.exports = grnx({
 
 ```js
 grnx({
-  // project root (required)
+  /** project root
+   * @type {string}
+   * @example __dirname
+   */
   root: __dirname,
-
-  // eslint ignore patterns
+  /** eslint ignore patterns
+   * @default ['**//*'] (in monorepo mode)
+   */
   ignore: ['**/*'],
-
-  // tsconfig path
-  // example - tsconfig.base.json
+  /** tsconfig path
+   * @example tsconfig.base.json
+   * @default tsconfig.json
+   */
   tsconfig: 'tsconfig.json',
-
-  // extensions provided by eslint-kit
-  // in the default configuration there
-  // are only 5 presets
+  /** extensions provided by eslint-kit
+   * in the default configuration there
+   * are only 5 presets
+   * @default []
+   */
   extensions: ['vue', 'solidJs'],
-  
-  // enables eslint-kit allowDebug
+  /** 
+   * enables eslint-kit allowDebug
+   * @default false
+   */
   allowDebug: true,
-
-  // enables presets.imports() - unstable preset,
-  // errors are possible.
+  /** enables presets.imports() - unstable preset,
+   * errors are possible.
+   * @default false
+   */
   enableImports: false
 })
 ```
