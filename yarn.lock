@@ -2320,6 +2320,9 @@ __metadata:
 "@grnx-utils/apollo@workspace:packages/apollo":
   version: 0.0.0-use.local
   resolution: "@grnx-utils/apollo@workspace:packages/apollo"
+  dependencies:
+    graphql: ^16.8.0
+    graphql-tag: ^2.12.6
   peerDependencies:
     "@apollo/client": ^3.8.3
     graphql: ^16.8.0
@@ -2330,6 +2333,8 @@ __metadata:
 "@grnx-utils/css-presets@workspace:packages/css-presets":
   version: 0.0.0-use.local
   resolution: "@grnx-utils/css-presets@workspace:packages/css-presets"
+  dependencies:
+    sass: ^1.66.1
   peerDependencies:
     react: ">=16"
     react-dom: ">=16"
@@ -2347,7 +2352,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@grnx-utils/eslint@workspace:packages/eslint"
   dependencies:
-    "@nx/eslint-plugin": ^16.7.4
+    "@nx/eslint-plugin": ^16.8.1
     eslint-kit: 10.0.0
     eslint-plugin-prefer-arrow: ^1.2.3
     prettier-plugin-layout: ^0.0.2
@@ -2426,8 +2431,6 @@ __metadata:
     "@vitest/ui": ~0.32.0
     babel-plugin-styled-components: 1.10.7
     eslint: 8.41.0
-    graphql: ^16.8.0
-    graphql-tag: ^2.12.6
     jest: ^29.4.1
     jsdom: ~22.1.0
     nx: 16.7.4
@@ -2437,7 +2440,6 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-is: 18.2.0
-    sass: ^1.66.1
     styled-components: 5.3.6
     tsconfig-paths: ^4.2.0
     tslib: ^2.3.0
@@ -2945,12 +2947,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/eslint-plugin-nx@npm:16.7.4":
-  version: 16.7.4
-  resolution: "@nrwl/eslint-plugin-nx@npm:16.7.4"
+"@nrwl/eslint-plugin-nx@npm:16.8.1":
+  version: 16.8.1
+  resolution: "@nrwl/eslint-plugin-nx@npm:16.8.1"
   dependencies:
-    "@nx/eslint-plugin": "npm:16.7.4"
-  checksum: 26760eee7a64525cc6d65224db520ec09d7c1f660220d3e49079d84e51e06612579e3936d5403db388426f23b33ddb3a0f62f142f246c53f9892b217610d3149
+    "@nx/eslint-plugin": 16.8.1
+  checksum: 8bc1fd8eae54a7c17ee54269d27d9fa8aef35fa22898dd884c39a3796f4b270ebd4ceaf93df8d4adbe77329dea5856aad7aa305d3e81c220ad4060f632920b27
   languageName: node
   linkType: hard
 
@@ -3185,27 +3187,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/eslint-plugin@npm:16.7.4, @nx/eslint-plugin@npm:^16.7.4":
-  version: 16.7.4
-  resolution: "@nx/eslint-plugin@npm:16.7.4"
+"@nx/eslint-plugin@npm:16.8.1, @nx/eslint-plugin@npm:^16.8.1":
+  version: 16.8.1
+  resolution: "@nx/eslint-plugin@npm:16.8.1"
   dependencies:
-    "@nrwl/eslint-plugin-nx": "npm:16.7.4"
-    "@nx/devkit": "npm:16.7.4"
-    "@nx/js": "npm:16.7.4"
-    "@typescript-eslint/type-utils": "npm:^5.60.1"
-    "@typescript-eslint/utils": "npm:^5.60.1"
-    chalk: "npm:^4.1.0"
-    confusing-browser-globals: "npm:^1.0.9"
-    jsonc-eslint-parser: "npm:^2.1.0"
-    semver: "npm:7.5.3"
-    tslib: "npm:^2.3.0"
+    "@nrwl/eslint-plugin-nx": 16.8.1
+    "@nx/devkit": 16.8.1
+    "@nx/js": 16.8.1
+    "@typescript-eslint/type-utils": ^5.60.1
+    "@typescript-eslint/utils": ^5.60.1
+    chalk: ^4.1.0
+    confusing-browser-globals: ^1.0.9
+    jsonc-eslint-parser: ^2.1.0
+    semver: 7.5.3
+    tslib: ^2.3.0
   peerDependencies:
     "@typescript-eslint/parser": ^5.60.1
     eslint-config-prettier: ^8.1.0
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: bbd2d9480efcd039e33194a26639d76b1d1c83ead4404892d4b8174de28ad7897b23419d22b1c44afdbfd110280566d9f879ecc650505c1c58af812dd7dbe8ff
+  checksum: f264e72f594813d6a3fa872b4496eb75ba6a8fe6c7c48a9a5d49fa59395ab53538879bf3b70461c10994c625da72c6e665b3d1b81f23639dff46ec2cd1ec93ae
   languageName: node
   linkType: hard
 
