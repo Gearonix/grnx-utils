@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 1.3.19
+
+### Patch Changes
+
+- [`e464469`](https://github.com/Gearonix/grnx-utils/commit/e464469aef29a85cfdc8835240b6d54229399fce) Thanks [@Gearonix](https://github.com/Gearonix)! - added `prettier-plugin-layout`, improved dependencies
+
 ## 1.3.18
 
 ### Patch Changes
