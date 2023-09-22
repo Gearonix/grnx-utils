@@ -7,5 +7,6 @@ export const prettierOptions: Options = {
   semi: false,
   bracketSpacing: true,
   bracketSameLine: true,
-  arrowParens: 'always'
+  arrowParens: 'always',
+  plugins: ['prettier-plugin-layout'].map((plugin) => require.resolve(plugin))
 }

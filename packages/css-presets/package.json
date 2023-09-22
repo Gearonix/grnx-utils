@@ -22,5 +22,8 @@
     "react": ">=16",
     "react-dom": ">=16",
     "styled-components": "5.3.6"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

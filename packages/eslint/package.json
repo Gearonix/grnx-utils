@@ -12,7 +12,10 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-kit": "10.0.0"
+    "@nx/eslint-plugin": "^16.7.4",
+    "eslint-kit": "10.0.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "prettier-plugin-layout": "^0.0.2"
   },
   "peerDependencies": {
     "eslint": "^8.46.0",
