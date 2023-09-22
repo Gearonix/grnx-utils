@@ -33,8 +33,7 @@ export const font = (font: Font) => css`
   font-family: '${font}', sans-serif;
 `
 
-export const antdColor =
-  (color: string) =>
+export const antdColor = (color: string) =>
   ({ theme }: any) =>
     `${theme[color]} !important;`
 

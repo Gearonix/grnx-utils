@@ -23,6 +23,7 @@ const grnx = require('@grnx-utils/eslint')
 
 module.exports = grnx({
   root: __dirname,   // project root (required)
+  monorepo: true,
   tsconfig: 'tsconfig.base.json'   // when using a monorepo like Nx
 })
 
@@ -37,6 +38,10 @@ grnx({
    * @example __dirname
    */
   root: __dirname,
+  /** enables monorepo mode
+   * @default false
+   */
+  monorepo: true,
   /** eslint ignore patterns
    * @default ['**//*'] (in monorepo mode)
    */

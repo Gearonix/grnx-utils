@@ -1,5 +1,17 @@
 # @grnx-utils/eslint
 
+## 1.3.21
+
+### Patch Changes
+
+- added monorepo option
+
+## 1.3.21
+
+### Patch Changes
+
+- removed @nx-eslint package
+
 ## 1.3.19
 
 ### Patch Changes

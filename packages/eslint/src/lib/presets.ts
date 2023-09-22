@@ -1,20 +1,13 @@
 import { presets }         from 'eslint-kit'
 
 import { prettierOptions } from './prettier'
-import { KitPreset }       from './types'
-import { ValidPresets }    from './types'
-
-export interface EslintKitPresetsOptions {
-  tsconfig?: string
-  extensions?: ValidPresets[]
-  enableImports?: boolean
-}
+import { ConfigOptions , KitPreset }   from './types'
 
 export const createEslintKitPresets = ({
   extensions = [],
   enableImports = true,
   tsconfig = 'tsconfig.json'
-}: EslintKitPresetsOptions): KitPreset[] => {
+}: ConfigOptions): KitPreset[] => {
   const kitPresets = [
     presets.node(),
     presets.prettier(prettierOptions),

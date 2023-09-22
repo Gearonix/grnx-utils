@@ -1,24 +1,20 @@
-import { Linter } from 'eslint'
-import { configure } from 'eslint-kit'
+import { Linter }                 from 'eslint'
+import { configure }              from 'eslint-kit'
 
+import { createIgnorePatterns }   from './lib/ignore-patterns'
 import { createEslintKitPresets } from './lib/presets'
-import { eslintRules } from './lib/rules'
-import { CreateEslintConfigOptions } from './lib/types'
+import { eslintRules }            from './lib/rules'
+import { ConfigOptions }          from './lib/types'
 
-export const createEslintConfig = ({
-  allowDebug = true,
-  root,
-  ignore = ['**/*'],
-  ...opts
-}: CreateEslintConfigOptions): Linter.Config => {
+export const createEslintConfig = (opts: ConfigOptions): Linter.Config => {
   return configure({
-    root,
-    allowDebug,
+    root: opts.root,
+    allowDebug: opts.allowDebug || true,
     presets: createEslintKitPresets(opts),
     extend: {
       root: true,
-      ignorePatterns: ignore,
-      plugins: ['prefer-arrow', '@nx'],
+      ignorePatterns: createIgnorePatterns(opts),
+      plugins: ['prefer-arrow'],
       rules: eslintRules
     }
   })
