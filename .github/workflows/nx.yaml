@@ -42,7 +42,7 @@ jobs:
           cache: 'yarn'
 
       - name: Installing dependencies
-        run: yarn install --immutable
+        run: yarn install --frozen-lockfile
 
       - name: Run NX checks
         run: |

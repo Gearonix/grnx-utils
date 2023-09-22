@@ -6,7 +6,7 @@ Custom `eslint` configuration built on top of [eslint-kit](https://github.com/es
 Adds eslint plugins like `@nx` , `prefer-arrow` and more.
 The config will be expanded in the future.
 
-[Eslint-kit](https://github.com/eslint-kit/eslint-kit) is a library that provides ready-made 
+[Eslint-kit](https://github.com/eslint-kit/eslint-kit) is a library that provides ready-made
 eslint presets and it belongs to Evgeny Zakharov.
 
 ## Installation
@@ -52,19 +52,29 @@ grnx({
    * @default []
    */
   extensions: ['vue', 'solidJs'],
-  /** 
+  /**
    * enables eslint-kit allowDebug
    * @default false
    */
   allowDebug: true,
   /** enables presets.imports() - unstable preset,
    * errors are possible.
-   * @default false
+   * @default true
    */
   enableImports: false
 })
 ```
 <br/>
+
+### List of packages used by @grnx-utils/eslint
+Will be expanded in the future.
+
+- [eslint-kit](https://github.com/eslint-kit/eslint-kit)
+- [prettier-plugin-layout](https://github.com/LIMPIX31/plugin-layout)
+- [@nx/eslint-plugin](https://nx.dev/packages/eslint-plugin)
+- [eslint-plugin-prefer-arrow](https://github.com/TristonJ/eslint-plugin-prefer-arrow)
+
+---
 
 > **Warning**
 > The package does not support the new `eslint.config.js` <br/>
