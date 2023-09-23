@@ -7,7 +7,7 @@
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
   "types": "./src/index.d.ts",
-  "typings": "/src/index.d.ts",
+  "typings": "./src/index.d.ts",
   "devDependencies": {
     "@types/react": "^18.2.21",
     "preact": "^10.17.1",

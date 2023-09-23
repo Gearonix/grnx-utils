@@ -2352,7 +2352,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@grnx-utils/eslint@workspace:packages/eslint"
   dependencies:
-    "@nx/eslint-plugin": ^16.7.4
     eslint-kit: 10.0.0
     eslint-plugin-prefer-arrow: ^1.2.3
     prettier-plugin-layout: ^0.0.2
@@ -2947,15 +2946,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nrwl/eslint-plugin-nx@npm:16.7.4":
-  version: 16.7.4
-  resolution: "@nrwl/eslint-plugin-nx@npm:16.7.4"
-  dependencies:
-    "@nx/eslint-plugin": "npm:16.7.4"
-  checksum: 26760eee7a64525cc6d65224db520ec09d7c1f660220d3e49079d84e51e06612579e3936d5403db388426f23b33ddb3a0f62f142f246c53f9892b217610d3149
-  languageName: node
-  linkType: hard
-
 "@nrwl/jest@npm:16.8.1":
   version: 16.8.1
   resolution: "@nrwl/jest@npm:16.8.1"
@@ -3184,30 +3174,6 @@ __metadata:
   peerDependencies:
     nx: ">= 15 <= 17"
   checksum: 92579ccc3f3cc7bdc0f23a26c2a1f358cadb4a06e7c166c6cca569f63e0715f74748e3657c40c252fded89786f870d88127211fc4c1158a58e5c528d39214d30
-  languageName: node
-  linkType: hard
-
-"@nx/eslint-plugin@npm:16.7.4, @nx/eslint-plugin@npm:^16.7.4":
-  version: 16.7.4
-  resolution: "@nx/eslint-plugin@npm:16.7.4"
-  dependencies:
-    "@nrwl/eslint-plugin-nx": "npm:16.7.4"
-    "@nx/devkit": "npm:16.7.4"
-    "@nx/js": "npm:16.7.4"
-    "@typescript-eslint/type-utils": "npm:^5.60.1"
-    "@typescript-eslint/utils": "npm:^5.60.1"
-    chalk: "npm:^4.1.0"
-    confusing-browser-globals: "npm:^1.0.9"
-    jsonc-eslint-parser: "npm:^2.1.0"
-    semver: "npm:7.5.3"
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@typescript-eslint/parser": ^5.60.1
-    eslint-config-prettier: ^8.1.0
-  peerDependenciesMeta:
-    eslint-config-prettier:
-      optional: true
-  checksum: bbd2d9480efcd039e33194a26639d76b1d1c83ead4404892d4b8174de28ad7897b23419d22b1c44afdbfd110280566d9f879ecc650505c1c58af812dd7dbe8ff
   languageName: node
   linkType: hard
 
@@ -4856,7 +4822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/type-utils@npm:5.62.0, @typescript-eslint/type-utils@npm:^5.60.1":
+"@typescript-eslint/type-utils@npm:5.62.0":
   version: 5.62.0
   resolution: "@typescript-eslint/type-utils@npm:5.62.0"
   dependencies:
@@ -4923,7 +4889,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:5.62.0, @typescript-eslint/utils@npm:^5.55.0, @typescript-eslint/utils@npm:^5.60.1":
+"@typescript-eslint/utils@npm:5.62.0, @typescript-eslint/utils@npm:^5.55.0":
   version: 5.62.0
   resolution: "@typescript-eslint/utils@npm:5.62.0"
   dependencies:
@@ -5388,7 +5354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.10.0, acorn@npm:^8.4.1, acorn@npm:^8.5.0, acorn@npm:^8.9.0":
+"acorn@npm:^8.10.0, acorn@npm:^8.4.1, acorn@npm:^8.9.0":
   version: 8.10.0
   resolution: "acorn@npm:8.10.0"
   bin:
@@ -6797,13 +6763,6 @@ __metadata:
   dependencies:
     source-map: "npm:^0.6.1"
   checksum: 57faa6f4a6f38a1846a58f96b2745ec8435755e0021f069e89085c651d091b78d9bc20807ea76c38c85021acca80dc2fa4cedda666aade169b602604215d25b9
-  languageName: node
-  linkType: hard
-
-"confusing-browser-globals@npm:^1.0.9":
-  version: 1.0.11
-  resolution: "confusing-browser-globals@npm:1.0.11"
-  checksum: 3afc635abd37e566477f610e7978b15753f0e84025c25d49236f1f14d480117185516bdd40d2a2167e6bed8048641a9854964b9c067e3dcdfa6b5d0ad3c3a5ef
   languageName: node
   linkType: hard
 
@@ -8474,7 +8433,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-visitor-keys@npm:^3.0.0, eslint-visitor-keys@npm:^3.3.0, eslint-visitor-keys@npm:^3.4.1":
+"eslint-visitor-keys@npm:^3.3.0, eslint-visitor-keys@npm:^3.4.1":
   version: 3.4.3
   resolution: "eslint-visitor-keys@npm:3.4.3"
   checksum: 36e9ef87fca698b6fd7ca5ca35d7b2b6eeaaf106572e2f7fd31c12d3bfdaccdb587bba6d3621067e5aece31c8c3a348b93922ab8f7b2cbc6aaab5e1d89040c60
@@ -8530,7 +8489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"espree@npm:^9.0.0, espree@npm:^9.3.1, espree@npm:^9.5.2, espree@npm:^9.6.0":
+"espree@npm:^9.3.1, espree@npm:^9.5.2, espree@npm:^9.6.0":
   version: 9.6.1
   resolution: "espree@npm:9.6.1"
   dependencies:
@@ -11228,18 +11187,6 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: 2a7436a93393830bce797d4626275152e37e877b265e94ca69c99e3d20c2b9dab021279146a39cdb700e71b2dd32a4cebd1514cd57cee102b1af906ce5040349
-  languageName: node
-  linkType: hard
-
-"jsonc-eslint-parser@npm:^2.1.0":
-  version: 2.3.0
-  resolution: "jsonc-eslint-parser@npm:2.3.0"
-  dependencies:
-    acorn: "npm:^8.5.0"
-    eslint-visitor-keys: "npm:^3.0.0"
-    espree: "npm:^9.0.0"
-    semver: "npm:^7.3.5"
-  checksum: e9343fee870a16f04fdb811b58a9469134c54a03edd58aa5654a888ebae63952cbff3ea3dcad3973465009a275282c6c0dd513e8c3850f7f485a164180085a8b
   languageName: node
   linkType: hard
 
