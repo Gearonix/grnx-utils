@@ -15,7 +15,7 @@ export const createEslintConfig = (opts: ConfigOptions): Linter.Config => {
       root: true,
       ignorePatterns: createIgnorePatterns(opts),
       plugins: ['prefer-arrow'],
-      rules: eslintRules
+      rules: { ...eslintRules, ...opts.ext }
     }
   })
 }

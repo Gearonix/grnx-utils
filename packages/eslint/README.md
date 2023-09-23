@@ -66,7 +66,13 @@ grnx({
    * errors are possible.
    * @default true
    */
-  enableImports: false
+  enableImports: false,
+  /** additional eslint rules
+   * @default {}
+   */
+  ext: {
+    'react-hooks/exhaustive-deps': 'warn'
+  }
 })
 ```
 <br/>

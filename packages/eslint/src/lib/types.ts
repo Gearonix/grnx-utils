@@ -1,3 +1,4 @@
+import {Linter} from 'eslint'
 import { configure , presets } from 'eslint-kit'
 
 export type Options = Parameters<typeof configure>[0]
@@ -14,4 +15,5 @@ export interface ConfigOptions {
   ignore?: string[]
   allowDebug?: boolean
   monorepo?: boolean
+  ext?: Partial<Linter.RulesRecord>
 }
