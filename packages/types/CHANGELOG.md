@@ -1,5 +1,11 @@
 # @grnx-utils/types
 
+## 1.0.2
+
+### Patch Changes
+
+- [`c03460d`](https://github.com/Gearonix/grnx-utils/commit/c03460dfe0fb27e7acee6c21c35eb59552aecd53) Thanks [@Gearonix](https://github.com/Gearonix)! - improved typings in package.json
+
 ## 1.0.1
 
 ### Patch Changes
