@@ -41,7 +41,7 @@
     "@types/styled-components": "5.1.26",
     "@vitejs/plugin-react": "~4.0.0",
     "@vitest/coverage-c8": "~0.32.0",
-    "@vitest/ui": "~0.32.0",
+    "@vitest/ui": "~0.34.5",
     "babel-plugin-styled-components": "1.10.7",
     "eslint": "8.41.0",
     "jest": "^29.4.1",
