@@ -2365,7 +2365,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@grnx-utils/generator@workspace:tools/generator"
   dependencies:
-    "@nx/devkit": 16.8.1
+    "@nx/devkit": 16.9.1
     tslib: ^2.3.0
   languageName: unknown
   linkType: soft
@@ -2403,7 +2403,7 @@ __metadata:
     "@babel/preset-react": ^7.14.5
     "@changesets/changelog-github": ^0.4.8
     "@changesets/cli": ^2.26.2
-    "@nx/devkit": ^16.7.4
+    "@nx/devkit": ^16.9.1
     "@nx/js": 16.8.0
     "@nx/linter": 16.7.4
     "@nx/plugin": ^16.8.1
@@ -2946,6 +2946,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nrwl/devkit@npm:16.9.1":
+  version: 16.9.1
+  resolution: "@nrwl/devkit@npm:16.9.1"
+  dependencies:
+    "@nx/devkit": 16.9.1
+  checksum: 0521b6eebb82c8251a6766484d164407673fdc10b205d521bea48dd3ed72534d182d20aee33d18aebe1e724e79a7d591bac3d2ce27414d9bce9885d655d592b6
+  languageName: node
+  linkType: hard
+
 "@nrwl/jest@npm:16.8.1":
   version: 16.8.1
   resolution: "@nrwl/jest@npm:16.8.1"
@@ -3126,7 +3135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:16.7.4, @nx/devkit@npm:^16.7.4":
+"@nx/devkit@npm:16.7.4":
   version: 16.7.4
   resolution: "@nx/devkit@npm:16.7.4"
   dependencies:
@@ -3174,6 +3183,23 @@ __metadata:
   peerDependencies:
     nx: ">= 15 <= 17"
   checksum: 92579ccc3f3cc7bdc0f23a26c2a1f358cadb4a06e7c166c6cca569f63e0715f74748e3657c40c252fded89786f870d88127211fc4c1158a58e5c528d39214d30
+  languageName: node
+  linkType: hard
+
+"@nx/devkit@npm:16.9.1, @nx/devkit@npm:^16.9.1":
+  version: 16.9.1
+  resolution: "@nx/devkit@npm:16.9.1"
+  dependencies:
+    "@nrwl/devkit": 16.9.1
+    ejs: ^3.1.7
+    enquirer: ~2.3.6
+    ignore: ^5.0.4
+    semver: 7.5.3
+    tmp: ~0.2.1
+    tslib: ^2.3.0
+  peerDependencies:
+    nx: ">= 15 <= 17"
+  checksum: c77ec32e9ebe051ad4c539d73115cef71cb30eefee6ad4f1dec000fb970471de8bc7323c4a154d35f548578b08018ae082d00ba537ac354bedf115897ff1b930
   languageName: node
   linkType: hard
 
