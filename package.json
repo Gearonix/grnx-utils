@@ -18,7 +18,7 @@
     "@babel/preset-react": "^7.14.5",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.2",
-    "@nx/devkit": "^16.7.4",
+    "@nx/devkit": "^17.0.1",
     "@nx/js": "16.8.0",
     "@nx/linter": "16.7.4",
     "@nx/plugin": "^16.8.1",
@@ -60,7 +60,7 @@
     "vitest": "~0.32.0"
   },
   "dependencies": {
-    "@nx/devkit": "16.8.1",
+    "@nx/devkit": "17.0.1",
     "@swc/helpers": "~0.5.0",
     "react-is": "18.2.0",
     "styled-components": "5.3.6",
