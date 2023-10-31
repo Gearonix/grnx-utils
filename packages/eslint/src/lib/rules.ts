@@ -13,5 +13,6 @@ export const eslintRules: Partial<Linter.RulesRecord> = {
   'react/no-array-index-key': 'warn',
   'prefer-arrow/prefer-arrow-functions': 'error',
   'max-len': ['error', { code: 90, tabWidth: 4 }],
-  'import/no-duplicates': 'off'
+  'import/no-duplicates': 'off',
+  'no-bitwise': ['off']
 }

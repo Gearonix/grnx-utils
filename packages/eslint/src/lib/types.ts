@@ -1,5 +1,6 @@
-import {Linter} from 'eslint'
-import { configure , presets } from 'eslint-kit'
+import { Linter }    from 'eslint'
+import { configure } from 'eslint-kit'
+import { presets }   from 'eslint-kit'
 
 export type Options = Parameters<typeof configure>[0]
 
@@ -11,6 +12,7 @@ export interface ConfigOptions {
   tsconfig?: string
   extensions?: ValidPresets[]
   enableImports?: boolean
+  typescript?: boolean
   root: string
   ignore?: string[]
   allowDebug?: boolean
