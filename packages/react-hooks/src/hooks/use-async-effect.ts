@@ -1,4 +1,5 @@
-import { DependencyList, useEffect } from 'react'
+import { DependencyList } from 'react'
+import { useEffect }      from 'react'
 
 export const useAsyncEffect = <T>(
   cb: () => Promise<T>,

@@ -1,7 +1,7 @@
-import { renderHook } from '@testing-library/react-hooks'
-import { expect } from 'vitest'
+import { renderHook }   from '@testing-library/react-hooks'
+import { expect }       from 'vitest'
 
-import { useOverflow } from '../hooks'
+import { useOverflow }  from '../hooks'
 import { renderChecks } from './helpers'
 
 describe('hook.use-overflow', () => {

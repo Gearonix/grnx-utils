@@ -1,4 +1,5 @@
-import { useCallback, useRef } from 'react'
+import { useCallback } from 'react'
+import { useRef }      from 'react'
 
 export const useThrottle = (callback: () => void, delay: number) => {
   const throttleRef = useRef(false)

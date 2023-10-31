@@ -1,5 +1,8 @@
-import { AnyFunction, Nullable } from '@grnx-utils/types'
-import { EventHandler, KeyboardEvent, useState } from 'react'
+import { AnyFunction }   from '@grnx-utils/types'
+import { Nullable }      from '@grnx-utils/types'
+import { EventHandler }  from 'react'
+import { KeyboardEvent } from 'react'
+import { useState }      from 'react'
 
 type Handlers = Record<string, Nullable<() => void>>
 

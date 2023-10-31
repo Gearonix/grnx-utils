@@ -1,8 +1,9 @@
 import { readCachedProjectGraph } from '@nx/devkit'
-import { execSync } from 'node:child_process'
-import { join } from 'node:path'
+import { execSync }               from 'node:child_process'
+import { join }                   from 'node:path'
 
-import { invariant, resolveRoot } from '../helpers'
+import { invariant }              from '../helpers'
+import { resolveRoot }            from '../helpers'
 
 const [, , name, tag = 'latest'] = process.argv
 

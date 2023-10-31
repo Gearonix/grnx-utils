@@ -1,8 +1,9 @@
-import { act, renderHook } from '@testing-library/react-hooks'
-import { expect } from 'vitest'
+import { act }             from '@testing-library/react-hooks'
+import { renderHook }      from '@testing-library/react-hooks'
+import { expect }          from 'vitest'
 
 import { useBooleanState } from '../hooks'
-import { renderChecks } from './helpers'
+import { renderChecks }    from './helpers'
 
 describe('hook.use-boolean-state', () => {
   it('should render', () => {

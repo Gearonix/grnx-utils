@@ -19,3 +19,9 @@ export interface ConfigOptions {
   monorepo?: boolean
   ext?: Partial<Linter.RulesRecord>
 }
+
+
+export interface CreateChildConfigProps {
+  ignore?: string[]
+  root: string
+}

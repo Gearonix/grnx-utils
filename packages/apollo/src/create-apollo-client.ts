@@ -1,11 +1,10 @@
-import {
-  ApolloClient,
-  ApolloClientOptions,
-  createHttpLink,
-  InMemoryCache,
-  NormalizedCacheObject
-} from '@apollo/client'
-import { ApolloMiddleware } from './middleware/core'
+import { ApolloClient }          from '@apollo/client'
+import { ApolloClientOptions }   from '@apollo/client'
+import { createHttpLink }        from '@apollo/client'
+import { InMemoryCache }         from '@apollo/client'
+import { NormalizedCacheObject } from '@apollo/client'
+
+import { ApolloMiddleware }      from './middleware/core'
 
 export interface CreateApolloClientOptions {
   url: string

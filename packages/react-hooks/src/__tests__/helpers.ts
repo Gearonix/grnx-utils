@@ -1,6 +1,7 @@
 import { AnyFunction } from '@grnx-utils/types'
-import { renderHook } from '@testing-library/react-hooks'
-import { Assertion, expect } from 'vitest'
+import { renderHook }  from '@testing-library/react-hooks'
+import { Assertion }   from 'vitest'
+import { expect }      from 'vitest'
 
 export const renderChecks = <Props, Return>(
   hook: AnyFunction<Return, Props>,

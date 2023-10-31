@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 2.0.0
+
+### Major Changes
+
+- added child configuration, added new rules and optional typescript preset
+
 ## 1.3.21
 
 ### Patch Changes

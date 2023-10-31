@@ -1,9 +1,11 @@
-import { act, renderHook } from '@testing-library/react-hooks'
+import { act }                  from '@testing-library/react-hooks'
+import { renderHook }           from '@testing-library/react-hooks'
 import { default as userEvent } from '@testing-library/user-event'
-import { expect, vi } from 'vitest'
+import { expect }               from 'vitest'
+import { vi }                   from 'vitest'
 
-import { useAltKeyDown } from '../hooks'
-import { renderChecks } from './helpers'
+import { useAltKeyDown }        from '../hooks'
+import { renderChecks }         from './helpers'
 
 describe('hook.use-alt-keydown', () => {
   it('should render', () => {

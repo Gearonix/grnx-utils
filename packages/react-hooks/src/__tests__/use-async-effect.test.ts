@@ -1,9 +1,10 @@
-import { AnyFunction } from '@grnx-utils/types'
-import { renderHook } from '@testing-library/react-hooks'
-import { beforeEach, expect } from 'vitest'
+import { AnyFunction }    from '@grnx-utils/types'
+import { renderHook }     from '@testing-library/react-hooks'
+import { beforeEach }     from 'vitest'
+import { expect }         from 'vitest'
 
 import { useAsyncEffect } from '../hooks'
-import { renderChecks } from './helpers'
+import { renderChecks }   from './helpers'
 
 describe('hook.use-async-effect', () => {
   let hook: AnyFunction

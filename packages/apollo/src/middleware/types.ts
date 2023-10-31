@@ -1,4 +1,4 @@
-import { AnyObject } from '@grnx-utils/types'
+import { AnyObject }    from '@grnx-utils/types'
 import { DocumentNode } from 'graphql/language'
 
 export type WithTypeName<P extends AnyObject> = P & { __typename: string }

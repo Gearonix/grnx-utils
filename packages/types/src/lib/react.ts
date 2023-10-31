@@ -1,4 +1,5 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement } from 'react'
+import { ReactNode }    from 'react'
 
 export type WithChildren<T> = T & {
   children: ReactElement | ReactNode

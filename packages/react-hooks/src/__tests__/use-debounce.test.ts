@@ -1,8 +1,12 @@
-import { AnyFunction } from '@grnx-utils/types'
-import { act, renderHook } from '@testing-library/react-hooks'
-import { afterEach, beforeEach, expect, vi } from 'vitest'
+import { AnyFunction }  from '@grnx-utils/types'
+import { act }          from '@testing-library/react-hooks'
+import { renderHook }   from '@testing-library/react-hooks'
+import { afterEach }    from 'vitest'
+import { beforeEach }   from 'vitest'
+import { expect }       from 'vitest'
+import { vi }           from 'vitest'
 
-import { useDebounce } from '../hooks'
+import { useDebounce }  from '../hooks'
 import { renderChecks } from './helpers'
 
 describe('hook.use-debounce', () => {

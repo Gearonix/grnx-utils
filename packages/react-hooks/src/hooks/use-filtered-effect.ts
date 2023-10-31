@@ -1,4 +1,6 @@
-import { DependencyList, EffectCallback, useEffect } from 'react'
+import { DependencyList } from 'react'
+import { EffectCallback } from 'react'
+import { useEffect }      from 'react'
 
 interface UseFilteredEffect {
   (callback: EffectCallback, deps: DependencyList): void

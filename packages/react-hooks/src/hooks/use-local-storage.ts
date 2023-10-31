@@ -1,5 +1,6 @@
 import { VoidFunction } from '@grnx-utils/types'
-import { useEffect, useState } from 'react'
+import { useEffect }    from 'react'
+import { useState }     from 'react'
 
 export interface UseLocalStoragePayload<T> {
   value: T

@@ -1,16 +1,13 @@
-import {
-  ApolloClient,
-  FetchResult,
-  NormalizedCacheObject
-} from '@apollo/client'
-import { AnyObject, Nullable } from '@grnx-utils/types'
+import { ApolloClient }          from '@apollo/client'
+import { FetchResult }           from '@apollo/client'
+import { NormalizedCacheObject } from '@apollo/client'
+import { AnyObject }             from '@grnx-utils/types'
+import { Nullable }              from '@grnx-utils/types'
 
-import {
-  ApolloOperation,
-  OperationType,
-  ToPayload,
-  WithTypeName
-} from './types'
+import { ApolloOperation }       from './types'
+import { OperationType }         from './types'
+import { ToPayload }             from './types'
+import { WithTypeName }          from './types'
 
 export interface ApolloMiddlewareOptions {
   client: ApolloClient<NormalizedCacheObject>

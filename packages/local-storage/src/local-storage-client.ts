@@ -1,6 +1,8 @@
-import { AnyObject, isString, Undefinable } from '@grnx-utils/types'
+import { AnyObject }              from '@grnx-utils/types'
+import { isString }               from '@grnx-utils/types'
+import { Undefinable }            from '@grnx-utils/types'
 
-import { isJson } from './helpers/is-json'
+import { isJson }                 from './helpers/is-json'
 import { LocalStorageClientOpts } from './types'
 
 export class LocalStorageClient<Storage extends AnyObject> {
@@ -65,4 +67,3 @@ export class LocalStorageClient<Storage extends AnyObject> {
     return this.layer ? `${this.layer}__${String(key)}` : (key as string)
   }
 }
-

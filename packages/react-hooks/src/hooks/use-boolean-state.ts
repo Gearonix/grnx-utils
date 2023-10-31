@@ -1,5 +1,5 @@
 import { VoidFunction } from '@grnx-utils/types'
-import { useState } from 'react'
+import { useState }     from 'react'
 
 export interface UseBooleanStatePayload {
   on: VoidFunction
