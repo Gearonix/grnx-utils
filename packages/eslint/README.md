@@ -12,7 +12,7 @@ eslint presets and it belongs to Evgeny Zakharov.
 ## Installation
 
 ```
-yarn add @grnx-utils/eslint eslint@^8.46.0 prettier@^3.0.0 typescript@^5.2.2 -D
+yarn add @grnx-utils/eslint eslint@^8.46.0 prettier@^3.0.0 typescript@^5.2.2 eslint-kit@10.0.0 -D
 ```
 
 ## Usage

@@ -3,7 +3,7 @@
   "auhtor": "Gearonix egor.uzhanin@gmail.com",
   "repository": "git@github.com:Gearonix/grnx-utils.git",
   "type": "commonjs",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
   "types": "./src/index.d.ts",
@@ -12,11 +12,12 @@
     "access": "public"
   },
   "dependencies": {
-    "eslint-kit": "10.0.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "prettier-plugin-layout": "^0.0.2"
+    "prettier-plugin-layout": "^0.0.2",
+    "eslint-plugin-perfectionist": "^2.2.0"
   },
   "peerDependencies": {
+    "eslint-kit": "10.0.0",
     "eslint": "^8.46.0",
     "prettier": "^3.0.0",
     "typescript": "^5.2.0"

@@ -14,5 +14,12 @@ export const eslintRules: Partial<Linter.RulesRecord> = {
   'prefer-arrow/prefer-arrow-functions': 'error',
   'max-len': ['error', { code: 90, tabWidth: 4 }],
   'import/no-duplicates': 'off',
-  'no-bitwise': ['off']
+  'no-bitwise': ['off'],
+  "perfectionist/sort-objects": [
+    "error",
+    {
+      "type": "natural",
+      "order": "asc"
+    }
+  ]
 }

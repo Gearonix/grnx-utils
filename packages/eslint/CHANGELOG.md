@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 3.0.0
+
+### Major Changes
+
+- moved eslint-kit as peer-dependency, added eslint-plugin-perfectionlist
+
 ## 2.0.0
 
 ### Major Changes
