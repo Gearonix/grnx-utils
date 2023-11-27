@@ -29,6 +29,10 @@ module.exports = grnx({
 
 ```
 
+> **Warning**
+> The package may not work with node 21 and higher.
+
+
 ## Configure API
 
 ```js

@@ -9,15 +9,15 @@ export type KitPreset = Options['presets'][number]
 export type ValidPresets = keyof typeof presets
 
 export interface ConfigOptions {
-  tsconfig?: string
-  extensions?: ValidPresets[]
-  enableImports?: boolean
-  typescript?: boolean
+  tsconfig: string
+  extensions: ValidPresets[]
+  enableImports: boolean
+  typescript: boolean
   root: string
-  ignore?: string[]
-  allowDebug?: boolean
-  monorepo?: boolean
-  ext?: Partial<Linter.RulesRecord>
+  ignore: string[]
+  allowDebug: boolean
+  monorepo: boolean
+  ext: Partial<Linter.RulesRecord>
 }
 
 

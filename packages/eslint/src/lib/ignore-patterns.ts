@@ -4,7 +4,7 @@ import { ConfigOptions }      from './types'
 export const createIgnorePatterns = ({
   ignore = [],
   monorepo
-}: ConfigOptions) => {
+}: Partial<ConfigOptions>) => {
   const defaultPatterns = monorepo ? ['**/*'] : userIgnorePatterns
 
   return [...defaultPatterns, ...ignore]

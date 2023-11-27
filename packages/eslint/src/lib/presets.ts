@@ -9,7 +9,7 @@ export const createEslintKitPresets = ({
   enableImports = true,
   tsconfig = 'tsconfig.json',
   typescript = true
-}: ConfigOptions): KitPreset[] => {
+}: Partial<ConfigOptions>): KitPreset[] => {
   const kitPresets = [
     presets.node(),
     presets.prettier(prettierOptions),
