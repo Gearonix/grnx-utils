@@ -1,5 +1,11 @@
 # @grnx-utils/eslint
 
+## 3.0.1
+
+### Patch Changes
+
+- update deps, change no-unused-vars rule
+
 ## 3.0.0
 
 ### Major Changes

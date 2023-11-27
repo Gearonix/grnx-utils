@@ -21,5 +21,7 @@ export const eslintRules: Partial<Linter.RulesRecord> = {
       "type": "natural",
       "order": "asc"
     }
-  ]
+  ],
+  "no-unused-vars": "off",
+  "@typescript-eslint/no-unused-vars": ["error"]
 }
