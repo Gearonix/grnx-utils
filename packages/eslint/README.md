@@ -18,20 +18,8 @@ yarn add @grnx-utils/eslint eslint@^8.46.0 prettier@^3.0.0 typescript@^5.2.2 esl
 ## Usage
 After installing, add the `.eslintrc.js` file in your project root:
 ```js
-const grnx = require('@grnx-utils/eslint')
-
-
-module.exports = grnx({
-  root: __dirname,   // project root (required)
-  monorepo: true,
-  tsconfig: 'tsconfig.base.json'   // when using a monorepo like Nx
-})
-
+module.exports = require('@grnx-utils/eslint')()
 ```
-
-> **Warning**
-> The package may not work with node 21 and higher.
-
 
 ## Configure API
 
@@ -94,3 +82,5 @@ Will be expanded in the future.
 > **Warning**
 > The package does not support the new `eslint.config.js` <br/>
 > file provided by the latest versions of eslint. Possible configuration errors
+
+> The package may not work with node 21 and higher.
