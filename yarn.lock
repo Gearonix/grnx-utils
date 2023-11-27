@@ -2427,7 +2427,7 @@ __metadata:
     "@types/styled-components": 5.1.26
     "@vitejs/plugin-react": ~4.0.0
     "@vitest/coverage-c8": ~0.32.0
-    "@vitest/ui": ~0.32.0
+    "@vitest/ui": ~0.34.6
     babel-plugin-styled-components: 1.10.7
     eslint: 8.41.0
     jest: ^29.4.1
@@ -5210,20 +5210,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/ui@npm:~0.32.0":
-  version: 0.32.4
-  resolution: "@vitest/ui@npm:0.32.4"
+"@vitest/ui@npm:~0.34.6":
+  version: 0.34.6
+  resolution: "@vitest/ui@npm:0.34.6"
   dependencies:
-    "@vitest/utils": "npm:0.32.4"
-    fast-glob: "npm:^3.2.12"
-    fflate: "npm:^0.8.0"
-    flatted: "npm:^3.2.7"
-    pathe: "npm:^1.1.1"
-    picocolors: "npm:^1.0.0"
-    sirv: "npm:^2.0.3"
+    "@vitest/utils": 0.34.6
+    fast-glob: ^3.3.0
+    fflate: ^0.8.0
+    flatted: ^3.2.7
+    pathe: ^1.1.1
+    picocolors: ^1.0.0
+    sirv: ^2.0.3
   peerDependencies:
     vitest: ">=0.30.1 <1"
-  checksum: e228a9573c81f341aa044832914a3332f477b0d6ff81416135d07d54581967956f8901a4099dd33e7c7dbaef813f53a89eb8d2f597c0c98b97ed87f496e9e554
+  checksum: aaea587823d38bf5bb1961bbfdddacd42bbcedd7a6f771d8e26f5f597267655a19527434099b11013d00100ddb25a9550d55d1a275c08763dc67407ac7d3baa1
   languageName: node
   linkType: hard
 
@@ -5235,6 +5235,17 @@ __metadata:
     loupe: "npm:^2.3.6"
     pretty-format: "npm:^29.5.0"
   checksum: 7d81162c3afaa638d30c47a28b7eced62abb8d7a8c891b10fa2f9756b2b6609d767142162044fe976c2cb8c17911d135fb3950f83e6d2bbd90150a042237bd25
+  languageName: node
+  linkType: hard
+
+"@vitest/utils@npm:0.34.6":
+  version: 0.34.6
+  resolution: "@vitest/utils@npm:0.34.6"
+  dependencies:
+    diff-sequences: ^29.4.3
+    loupe: ^2.3.6
+    pretty-format: ^29.5.0
+  checksum: acf716af2bab66037e49bd6d3e8bae40b605b9bff515d4926c46d6f8cc2366decfac5a1756ea55029968e71fba1da1f992764c3a57c9b46eccce3f6db7197bd6
   languageName: node
   linkType: hard
 
@@ -8814,7 +8825,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.0.3, fast-glob@npm:^3.2.12, fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.1":
+"fast-glob@npm:^3.0.3, fast-glob@npm:^3.2.5, fast-glob@npm:^3.2.7, fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.1":
   version: 3.3.1
   resolution: "fast-glob@npm:3.3.1"
   dependencies:
